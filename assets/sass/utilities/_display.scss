@@ -1,0 +1,45 @@
+/* Display */
+
+//Block, Inline block
+
+.inlineBlock {
+  display: inline-block;
+}
+
+// Flex
+
+.flex {
+  @include flex();
+}
+
+.flexColumn {
+  flex-direction: column;
+}
+
+.flexRow {
+  flex-direction: row;
+}
+
+.alignItemCenter {
+  align-items: center;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.spaceAround {
+  justify-content: space-around;
+}
+
+.flexEnd {
+  justify-content: flex-end;
+}
+
+.flexStart {
+  justify-content: flex-start;
+}
+
+.flexWrap {
+  flex-wrap: wrap;
+}
