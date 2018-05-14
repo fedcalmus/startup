@@ -2,8 +2,12 @@
 
 //Block, Inline block
 
-.inlineBlock {
+.inlineBlc {
   display: inline-block;
+}
+
+.blc {
+  display: block;
 }
 
 // Flex
@@ -42,4 +46,8 @@
 
 .flexWrap {
   flex-wrap: wrap;
+}
+
+.justifyCenter {
+  justify-content: center;
 }

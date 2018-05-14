@@ -1,2 +1,79 @@
 /* Content element styles */
 
+// container, body
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: $regular;
+  font-size: 14px;
+  color: $grey;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.clearAfter {
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
+// Colors
+
+.green {
+  color: $green;
+}
+.black {
+  color: $black;
+}
+
+.grey {
+  color: $grey;
+}
+
+// Backgrounds
+
+.darkBg {
+  background-color: $black;
+}
+
+// Text-transform
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+// Positions
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+// Text align
+
+.alignCenter {
+  text-align: center;
+}
+
+// Floats
+
+.fltLeft {
+  float: left;
+}
+
+.fltRight {
+  float: right;
+}

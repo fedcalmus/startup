@@ -1,2 +1,76 @@
-/* Header styles */
+/* Header */
 
+header {
+
+  .banner {
+    @include bgImage;
+    background: url("../images/banner.png");
+    height: 740px;
+
+    .content {
+      @include verticalAlign;
+      left: 378px;
+      color: $black;
+      font-size: 18px;
+
+      .slogan {
+        font-size: 61px;
+      }
+
+      p {
+        @include border-radius(5px);
+        padding: 13px 86px 14px 12px;
+        color: #ffffff;
+      }
+
+      i {
+        font-size: 50px;
+      }
+      span {
+        &:nth-child(4) {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+
+  .nav {
+
+    .fltLeft {
+
+      a {
+        &:hover {
+          @include opacity(0.8);
+        }
+      }
+
+      img {
+        max-height: 45px;
+      }
+    }
+
+    nav {
+
+      ul {
+
+        li {
+          display: inline-block;
+
+          a {
+            font-size: 13px;
+            color: $grey;
+            font-weight: $extraBold;
+            padding: 15px 30px;
+            @include transition(0.2s);
+
+            &:hover {
+              background-color: $grey;
+              color: white;
+              @include border-radius(5px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
