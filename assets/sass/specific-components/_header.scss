@@ -17,19 +17,24 @@ header {
         font-size: 61px;
       }
 
+      div {
+        font-size: 26px;
+      }
+
       p {
         @include border-radius(5px);
         padding: 13px 86px 14px 12px;
         color: #ffffff;
+
+        span {
+          &:nth-child(2) {
+            text-transform: lowercase;
+          }
+        }
       }
 
       i {
         font-size: 50px;
-      }
-      span {
-        &:nth-child(4) {
-          font-size: 26px;
-        }
       }
     }
   }

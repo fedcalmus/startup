@@ -3309,6 +3309,10 @@ table {
 .extraBold {
   font-weight: 800; }
 
+.title {
+  font-size: 26px;
+  font-weight: 800; }
+
 /* Display */
 .inlineBlc {
   display: inline-block; }
@@ -3381,7 +3385,7 @@ body {
 .darkBg {
   background-color: #383838; }
 
-.uppercase {
+.uppercase, .title {
   text-transform: uppercase; }
 
 .capitalize {
@@ -3407,6 +3411,11 @@ body {
 
 /* Import specific components */
 /* Index */
+.offer {
+  padding-top: 80px; }
+  .offer p:nth-child(2) {
+    font-size: 16px; }
+
 /* Header */
 header .banner {
   background-repeat: no-repeat;
@@ -3425,16 +3434,18 @@ header .banner {
     font-size: 18px; }
     header .banner .content .slogan {
       font-size: 61px; }
+    header .banner .content div {
+      font-size: 26px; }
     header .banner .content p {
       border-radius: 5px;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       padding: 13px 86px 14px 12px;
       color: #ffffff; }
+      header .banner .content p span:nth-child(2) {
+        text-transform: lowercase; }
     header .banner .content i {
       font-size: 50px; }
-    header .banner .content span:nth-child(4) {
-      font-size: 26px; }
 header .nav {
   border-bottom: 2px solid #dedede; }
   header .nav .fltLeft a:hover {

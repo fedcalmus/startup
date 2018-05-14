@@ -1,1 +1,13 @@
 /* Index */
+
+// Offer section
+
+.offer {
+  padding-top: 80px;
+
+  p {
+    &:nth-child(2) {
+      font-size: 16px;
+    }
+  }
+}

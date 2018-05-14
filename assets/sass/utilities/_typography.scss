@@ -1,6 +1,6 @@
 /* Typography */
 
-// Raleway
+// Font weights
 
 .regular {
   font-weight: $regular;
@@ -14,3 +14,10 @@
   font-weight: $extraBold;
 }
 
+// title
+
+.title {
+  font-size: 26px;
+  font-weight: $extraBold;
+  @extend .uppercase;
+}
