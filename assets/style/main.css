@@ -3402,6 +3402,9 @@ body {
 .fltRight {
   float: right; }
 
+.linesLeft {
+  border-bottom: 1px double #ffffff; }
+
 /* Import specific components */
 /* Index */
 /* Header */
@@ -3432,29 +3435,31 @@ header .banner {
       font-size: 50px; }
     header .banner .content span:nth-child(4) {
       font-size: 26px; }
-header .nav .fltLeft a:hover {
-  opacity: 0.8;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  filter: alpha(opacity=80); }
-header .nav .fltLeft img {
-  max-height: 45px; }
-header .nav nav ul li {
-  display: inline-block; }
-  header .nav nav ul li a {
-    font-size: 13px;
-    color: #606060;
-    font-weight: 800;
-    padding: 15px 30px;
-    -moz-transition: 0.2s;
-    -o-transition: 0.2s;
-    -webkit-transition: 0.2s;
-    transition: 0.2s; }
-    header .nav nav ul li a:hover {
-      background-color: #606060;
-      color: white;
-      border-radius: 5px;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px; }
+header .nav {
+  border-bottom: 2px solid #dedede; }
+  header .nav .fltLeft a:hover {
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80); }
+  header .nav .fltLeft img {
+    max-height: 45px; }
+  header .nav nav ul li {
+    display: inline-block; }
+    header .nav nav ul li a {
+      font-size: 13px;
+      color: #606060;
+      font-weight: 800;
+      padding: 15px 30px;
+      -moz-transition: 0.2s;
+      -o-transition: 0.2s;
+      -webkit-transition: 0.2s;
+      transition: 0.2s; }
+      header .nav nav ul li a:hover {
+        background-color: #606060;
+        color: white;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px; }
 
 /* Footer */
 
