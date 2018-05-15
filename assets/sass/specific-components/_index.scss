@@ -1,5 +1,7 @@
 /* Index */
 
+
+
 // Offer section
 
 .offer {
@@ -10,4 +12,50 @@
       font-size: 16px;
     }
   }
+  .items {
+    padding-bottom: 110px;
+
+    .item {
+      @extend .alignCenter;
+      width: (100% / 3);
+
+      span {
+        @extend .pb35;
+        @extend .blc;
+      }
+
+      em, a {
+        @extend .extraBold;
+        @extend .uppercase;
+      }
+
+      a {
+        @include transition(0.3s);
+      }
+
+      p {
+        @extend .pt25;
+        @extend .pb30;
+        max-width: 380px;
+        margin: 0 auto;
+        line-height: 30px;
+        @extend .md;
+      }
+
+      i {
+        @include border-radius(100%);
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        font-size: 40px;
+        line-height: 100px;
+        color: $lightGrey;
+      }
+    }
+  }
+}
+
+#map {
+  height: 500px;
+  width: 100%;
 }

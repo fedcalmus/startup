@@ -1,2 +1,19 @@
 /* Buttons */
 
+.btnSm {
+  padding: 12px 13px;
+}
+
+.btnWhite {
+  background-color: #ffffff;
+  @include border-all(1px, solid, $lightGrey);
+  @include border-radius(5px);
+  color: $grey;
+
+  &:hover {
+    background-color: $green;
+    color: #ffffff;
+    border-color: transparent;
+  }
+}
+

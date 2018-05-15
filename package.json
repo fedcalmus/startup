@@ -1,0 +1,22 @@
+{
+  "name": "startup",
+  "version": "1.0.0",
+  "description": "Startup project, done with sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedcalmus/startup.git"
+  },
+  "author": "fedcalmus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fedcalmus/startup/issues"
+  },
+  "homepage": "https://github.com/fedcalmus/startup#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

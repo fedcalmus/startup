@@ -13,7 +13,7 @@ header {
       color: $black;
       font-size: 18px;
 
-      .slogan {
+      em {
         font-size: 61px;
       }
 
@@ -21,10 +21,9 @@ header {
         font-size: 26px;
       }
 
-      p {
+      .desc {
         @include border-radius(5px);
         padding: 13px 86px 14px 12px;
-        color: #ffffff;
 
         span {
           &:nth-child(2) {
@@ -48,10 +47,6 @@ header {
         &:hover {
           @include opacity(0.8);
         }
-      }
-
-      img {
-        max-height: 45px;
       }
     }
 

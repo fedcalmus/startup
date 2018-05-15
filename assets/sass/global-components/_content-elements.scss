@@ -36,10 +36,18 @@ body {
   color: $grey;
 }
 
+.white {
+  color: #ffffff;
+}
+
 // Backgrounds
 
 .darkBg {
   background-color: $black;
+}
+
+.greenBg {
+  background-color: $green;
 }
 
 // Text-transform
@@ -81,4 +89,7 @@ body {
 .linesLeft {
   border-bottom: 1px double #ffffff;
 }
+
+
+
 
