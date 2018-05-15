@@ -3,3 +3,11 @@
 .logo {
   max-height: 45px;
 }
+
+.desc {
+  @extend .md;
+  @extend .alignCenter;
+  @extend .pt20;
+  @extend .pb50;
+  font-size: 16px;
+}

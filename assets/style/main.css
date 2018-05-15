@@ -3047,7 +3047,7 @@ table {
 .mr20 {
   margin-right: 20px; }
 
-.pt20 {
+.pt20, .desc {
   padding-top: 20px; }
 
 .pb20 {
@@ -3194,7 +3194,7 @@ table {
 .pt50 {
   padding-top: 50px; }
 
-.pb50 {
+.pb50, .desc {
   padding-bottom: 50px; }
 
 .pl50 {
@@ -3303,7 +3303,7 @@ table {
 .regular {
   font-weight: 400; }
 
-.md, .offer .items .item p {
+.md, .desc, .offer .items .item p {
   font-weight: 500; }
 
 .extraBold, .offer .items .item em, .offer .items .item a {
@@ -3420,7 +3420,7 @@ body {
 .relative {
   position: relative; }
 
-.alignCenter, .offer .items .item {
+.alignCenter, .desc, .offer .items .item {
   text-align: center; }
 
 .fltLeft {
@@ -3436,12 +3436,13 @@ body {
 .logo {
   max-height: 45px; }
 
+.desc {
+  font-size: 16px; }
+
 /* Import specific components */
 /* Index */
 .offer {
   padding-top: 80px; }
-  .offer p:nth-child(2) {
-    font-size: 16px; }
   .offer .items {
     padding-bottom: 110px; }
     .offer .items .item {
@@ -3465,6 +3466,11 @@ body {
         font-size: 40px;
         line-height: 100px;
         color: #dedede; }
+
+.features .mockup {
+  z-index: 1;
+  bottom: -80px;
+  right: 115px; }
 
 #map {
   height: 500px;

@@ -7,11 +7,6 @@
 .offer {
   padding-top: 80px;
 
-  p {
-    &:nth-child(2) {
-      font-size: 16px;
-    }
-  }
   .items {
     padding-bottom: 110px;
 
@@ -55,6 +50,19 @@
   }
 }
 
+// Features
+
+.features {
+  .mockup {
+    z-index: 1;
+    bottom: -80px;
+    right: 115px;
+  }
+}
+
+
+
+// Footer
 #map {
   height: 500px;
   width: 100%;
