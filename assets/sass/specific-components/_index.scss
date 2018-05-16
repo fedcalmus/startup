@@ -98,6 +98,93 @@
   }
 }
 
+.services {
+
+  .items {
+    padding-top: 95px;
+    padding-bottom: 105px;
+
+    .item {
+      width: (100% / 3);
+      @extend .flex;
+      @extend .pb60;
+
+      i {
+        font-size: 20px;
+        @extend .mr10;
+        @extend .lightGrey;
+        @extend .darkBg;
+        width: 54px;
+        @extend .pt20;
+        @extend .pb25;
+        @extend .alignCenter;
+        @include border-top-radius(5px);
+      }
+
+      .chevron {
+        position: relative;
+        text-align: center;
+        padding: 27px;
+
+        &:before {
+          content: '';
+          @extend .absolute;
+          top: 16px;
+          left: 0;
+          height: 40%;
+          width: 50%;
+          @extend .greenBg;
+          @include skew(0,40);
+
+        }
+      }
+
+      .chevron:after {
+        content: '';
+        @extend .absolute;
+        top: 16px;
+        right: 0;
+        height: 40%;
+        width: 50%;
+        @extend .greenBg;
+        @include skew(0,-40);
+      }
+
+
+       .service {
+
+         em {
+           @extend .extraBold;
+           @extend .uppercase;
+         }
+
+         span {
+           @extend .blc;
+           font-size: 12px;
+           @extend .darkGrey;
+           @extend .pt10;
+           @extend .pb30;
+           @extend .capitalize;
+         }
+
+         p {
+           max-width: 300px;
+         }
+       }
+    }
+    .puzzle {
+
+      i {
+        @extend .greenBg;
+      }
+
+      .chevron:after, .chevron:before {
+        background-color: $black !important;
+      }
+    }
+  }
+}
+
 
 
 // Footer

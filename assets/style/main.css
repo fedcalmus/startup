@@ -2996,10 +2996,10 @@ table {
 .ml10 {
   margin-left: 10px; }
 
-.mr10 {
+.mr10, .services .items .item i {
   margin-right: 10px; }
 
-.pt10, .features .items .item i {
+.pt10, .features .items .item i, .services .items .item .service span {
   padding-top: 10px; }
 
 .pb10 {
@@ -3047,7 +3047,7 @@ table {
 .mr20 {
   margin-right: 20px; }
 
-.pt20, .desc, .features .items .item div p {
+.pt20, .desc, .features .items .item div p, .services .items .item i {
   padding-top: 20px; }
 
 .pb20 {
@@ -3074,7 +3074,7 @@ table {
 .pt25, .offer .items .item p {
   padding-top: 25px; }
 
-.pb25 {
+.pb25, .services .items .item i {
   padding-bottom: 25px; }
 
 .pl25 {
@@ -3098,7 +3098,7 @@ table {
 .pt30 {
   padding-top: 30px; }
 
-.pb30, .offer .items .item p {
+.pb30, .offer .items .item p, .services .items .item .service span {
   padding-bottom: 30px; }
 
 .pl30 {
@@ -3242,7 +3242,7 @@ table {
 .pt60 {
   padding-top: 60px; }
 
-.pb60 {
+.pb60, .services .items .item {
   padding-bottom: 60px; }
 
 .pl60 {
@@ -3306,7 +3306,7 @@ table {
 .md, .desc, .offer .items .item p, .features .items .item div p {
   font-weight: 500; }
 
-.extraBold, .offer .items .item em, .offer .items .item a, .features .items .item div em {
+.extraBold, .offer .items .item em, .offer .items .item a, .features .items .item div em, .services .items .item .service em {
   font-weight: 800; }
 
 .title {
@@ -3317,10 +3317,10 @@ table {
 .inlineBlc {
   display: inline-block; }
 
-.blc, .offer .items .item span {
+.blc, .offer .items .item span, .services .items .item .service span {
   display: block; }
 
-.flex, .features .items .item {
+.flex, .features .items .item, .services .items .item {
   display: flex;
   display: -webkit-box;
   display: -moz-box;
@@ -3349,6 +3349,9 @@ table {
   justify-content: flex-start; }
 
 .flexWrap {
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
 .justifyCenter {
@@ -3402,25 +3405,31 @@ body {
 .white {
   color: #ffffff; }
 
-.darkBg {
+.lightGrey, .services .items .item i {
+  color: #dedede; }
+
+.darkGrey, .services .items .item .service span {
+  color: #aaaaaa; }
+
+.darkBg, .services .items .item i {
   background-color: #383838; }
 
-.greenBg, .square div {
+.greenBg, .square div, .services .items .item .chevron:before, .services .items .item .chevron:after, .services .items .puzzle i {
   background-color: #00a99d; }
 
-.uppercase, .title, .offer .items .item em, .offer .items .item a, .features .items .item div em {
+.uppercase, .title, .offer .items .item em, .offer .items .item a, .features .items .item div em, .services .items .item .service em {
   text-transform: uppercase; }
 
-.capitalize {
+.capitalize, .services .items .item .service span {
   text-transform: capitalize; }
 
-.absolute, .square, .square div i {
+.absolute, .square, .square div i, .services .items .item .chevron:before, .services .items .item .chevron:after {
   position: absolute; }
 
 .relative, .square div {
   position: relative; }
 
-.alignCenter, .desc, .offer .items .item {
+.alignCenter, .desc, .offer .items .item, .services .items .item i {
   text-align: center; }
 
 .fltLeft {
@@ -3509,6 +3518,52 @@ body {
   z-index: 1;
   bottom: -80px;
   right: 115px; }
+
+.services .items {
+  padding-top: 95px;
+  padding-bottom: 105px; }
+  .services .items .item {
+    width: 33.3333333333%; }
+    .services .items .item i {
+      font-size: 20px;
+      width: 54px;
+      -webkit-border-top-right-radius: 5px;
+      border-top-right-radius: 5px;
+      -webkit-border-top-left-radius: 5px;
+      border-top-left-radius: 5px;
+      background-clip: padding-box; }
+    .services .items .item .chevron {
+      position: relative;
+      text-align: center;
+      padding: 27px; }
+      .services .items .item .chevron:before {
+        content: '';
+        top: 16px;
+        left: 0;
+        height: 40%;
+        width: 50%;
+        -moz-transform: skew(0deg, 40deg);
+        -o-transform: skew(0deg, 40deg);
+        -ms-transform: skew(0deg, 40deg);
+        -webkit-transform: skew(0deg, 40deg);
+        transform: skew(0deg, 40deg); }
+    .services .items .item .chevron:after {
+      content: '';
+      top: 16px;
+      right: 0;
+      height: 40%;
+      width: 50%;
+      -moz-transform: skew(0deg, -40deg);
+      -o-transform: skew(0deg, -40deg);
+      -ms-transform: skew(0deg, -40deg);
+      -webkit-transform: skew(0deg, -40deg);
+      transform: skew(0deg, -40deg); }
+    .services .items .item .service span {
+      font-size: 12px; }
+    .services .items .item .service p {
+      max-width: 300px; }
+  .services .items .puzzle .chevron:after, .services .items .puzzle .chevron:before {
+    background-color: #383838 !important; }
 
 #map {
   height: 500px;

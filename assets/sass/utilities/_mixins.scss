@@ -19,6 +19,13 @@
   display: -webkit-flex;
 }
 
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+  -moz-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+
 // Border radius
 
 @mixin border-radius($radius) {
@@ -104,4 +111,18 @@
   -ms-transform: rotate($degrees);
   -o-transform: rotate($degrees);
   transform: rotate($degrees);
+}
+
+// Generic transform
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+// skew
+@mixin skew ($x, $y) {
+  @include transform(skew(#{$x}deg, #{$y}deg));
 }

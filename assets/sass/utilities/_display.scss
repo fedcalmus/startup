@@ -45,7 +45,7 @@
 }
 
 .flexWrap {
-  flex-wrap: wrap;
+  @include flex-wrap(wrap);
 }
 
 .justifyCenter {
