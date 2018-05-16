@@ -8,7 +8,7 @@ header {
     height: 740px;
 
     .content {
-      @include verticalAlign;
+      @include YAlign;
       left: 378px;
       color: $black;
       font-size: 18px;
@@ -26,6 +26,7 @@ header {
         padding: 13px 86px 14px 12px;
 
         span {
+
           &:nth-child(2) {
             text-transform: lowercase;
           }

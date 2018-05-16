@@ -11,3 +11,27 @@
   @extend .pb50;
   font-size: 16px;
 }
+
+.square {
+
+  @extend .absolute;
+  @include XAlign;
+
+
+  div  {
+    height: 60px;
+    width: 60px;
+    @extend .greenBg;
+    @include rotate(45deg);
+    @extend .relative;
+    @include border-radius(4px);
+    top: -30px;
+
+    i {
+      color: #ffffff;
+      font-size: 25px;
+      @extend .absolute;
+      @include XYAlign;
+    }
+  }
+}

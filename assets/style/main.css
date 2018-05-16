@@ -3405,7 +3405,7 @@ body {
 .darkBg {
   background-color: #383838; }
 
-.greenBg {
+.greenBg, .square div {
   background-color: #00a99d; }
 
 .uppercase, .title, .offer .items .item em, .offer .items .item a, .features .items .item div em {
@@ -3414,10 +3414,10 @@ body {
 .capitalize {
   text-transform: capitalize; }
 
-.absolute {
+.absolute, .square, .square div i {
   position: absolute; }
 
-.relative {
+.relative, .square div {
   position: relative; }
 
 .alignCenter, .desc, .offer .items .item {
@@ -3438,6 +3438,34 @@ body {
 
 .desc {
   font-size: 16px; }
+
+.square {
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%); }
+  .square div {
+    height: 60px;
+    width: 60px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    top: -30px; }
+    .square div i {
+      color: #ffffff;
+      font-size: 25px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%); }
 
 /* Import specific components */
 /* Index */
