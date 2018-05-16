@@ -2999,7 +2999,7 @@ table {
 .mr10 {
   margin-right: 10px; }
 
-.pt10 {
+.pt10, .features .items .item i {
   padding-top: 10px; }
 
 .pb10 {
@@ -3047,7 +3047,7 @@ table {
 .mr20 {
   margin-right: 20px; }
 
-.pt20, .desc {
+.pt20, .desc, .features .items .item div p {
   padding-top: 20px; }
 
 .pb20 {
@@ -3128,7 +3128,7 @@ table {
 .pl35 {
   padding-left: 35px; }
 
-.pr35 {
+.pr35, .features .items .item i {
   padding-right: 35px; }
 
 .mt40 {
@@ -3218,7 +3218,7 @@ table {
 .pt55 {
   padding-top: 55px; }
 
-.pb55 {
+.pb55, .features .items {
   padding-bottom: 55px; }
 
 .pl55 {
@@ -3290,7 +3290,7 @@ table {
 .pt70 {
   padding-top: 70px; }
 
-.pb70 {
+.pb70, .features .items .item {
   padding-bottom: 70px; }
 
 .pl70 {
@@ -3303,10 +3303,10 @@ table {
 .regular {
   font-weight: 400; }
 
-.md, .desc, .offer .items .item p {
+.md, .desc, .offer .items .item p, .features .items .item div p {
   font-weight: 500; }
 
-.extraBold, .offer .items .item em, .offer .items .item a {
+.extraBold, .offer .items .item em, .offer .items .item a, .features .items .item div em {
   font-weight: 800; }
 
 .title {
@@ -3320,7 +3320,7 @@ table {
 .blc, .offer .items .item span {
   display: block; }
 
-.flex {
+.flex, .features .items .item {
   display: flex;
   display: -webkit-box;
   display: -moz-box;
@@ -3390,7 +3390,7 @@ body {
   clear: both;
   display: block; }
 
-.green {
+.green, .features .items .item i {
   color: #00a99d; }
 
 .black {
@@ -3408,7 +3408,7 @@ body {
 .greenBg {
   background-color: #00a99d; }
 
-.uppercase, .title, .offer .items .item em, .offer .items .item a {
+.uppercase, .title, .offer .items .item em, .offer .items .item a, .features .items .item div em {
   text-transform: uppercase; }
 
 .capitalize {
@@ -3467,6 +3467,16 @@ body {
         line-height: 100px;
         color: #dedede; }
 
+.features .items .item:last-child {
+  padding-bottom: 0; }
+.features .items .item i {
+  font-size: 50px; }
+.features .items .item div {
+  max-width: 265px; }
+  .features .items .item div em {
+    color: #ffffff; }
+  .features .items .item div p {
+    line-height: 25px; }
 .features .mockup {
   z-index: 1;
   bottom: -80px;

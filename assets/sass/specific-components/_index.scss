@@ -53,6 +53,44 @@
 // Features
 
 .features {
+
+  .items {
+
+    @extend .pb55;
+
+    .item {
+      @extend .flex;
+      @extend .pb70;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      i {
+        font-size: 50px;
+        @extend .green;
+        @extend .pr35;
+        @extend .pt10;
+      }
+
+      div {
+
+        max-width: 265px;
+
+        em {
+          @extend .extraBold;
+          color: #ffffff;
+          @extend .uppercase;
+        }
+
+        p {
+          @extend .md;
+          @extend .pt20;
+          line-height: 25px;
+        }
+      }
+    }
+  }
   .mockup {
     z-index: 1;
     bottom: -80px;
