@@ -1,7 +1,7 @@
 /* Spaces */
 
 $i: 0;
-@while $i <= 70 {
+@while $i <= 50 {
   .mt#{$i} { margin-top: 1px * $i; }
   .mb#{$i} { margin-bottom: 1px * $i; }
   .ml#{$i} { margin-left: 1px * $i; }

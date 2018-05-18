@@ -1,14 +1,32 @@
 /* Buttons */
 
+.btn {
+  @include border-all(1px, solid, transparent);
+  text-transform: uppercase;
+  font-weight: $extraBold;
+  @include border-radius(5px);
+}
+
+.btnGreen {
+  background-color: $green;
+  color: $lightGray;
+}
+
 .btnSm {
   padding: 12px 13px;
 }
 
+.btnXL {
+  padding: 16px 530px;
+}
+
+.outline {
+  border-color: $lightGray;
+}
+
 .btnWhite {
   background-color: #ffffff;
-  @include border-all(1px, solid, $lightGrey);
-  @include border-radius(5px);
-  color: $grey;
+  color: $gray;
 
   &:hover {
     background-color: $green;
@@ -16,4 +34,7 @@
     border-color: transparent;
   }
 }
+
+
+
 

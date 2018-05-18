@@ -122,7 +122,17 @@
   transform: $transforms;
 }
 
-// skew
+// Skew
 @mixin skew ($x, $y) {
   @include transform(skew(#{$x}deg, #{$y}deg));
 }
+
+// Clip path
+
+@mixin clip-path($clip) {
+  -webkit-clip-path: $clip;
+  -moz-clip-path: $clip;
+  -ms-clip-path: $clip;
+  clip-path: $clip;
+}
+

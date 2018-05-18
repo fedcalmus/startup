@@ -13,6 +13,7 @@
     .item {
       @extend .alignCenter;
       width: (100% / 3);
+      @extend .pr30;
 
       span {
         @extend .pb35;
@@ -33,7 +34,7 @@
         @extend .pb30;
         max-width: 380px;
         margin: 0 auto;
-        line-height: 30px;
+        line-height: 26px;
         @extend .md;
       }
 
@@ -44,7 +45,7 @@
         text-align: center;
         font-size: 40px;
         line-height: 100px;
-        color: $lightGrey;
+        color: $lightGray;
       }
     }
   }
@@ -56,11 +57,11 @@
 
   .items {
 
-    @extend .pb55;
+    padding-bottom: 55px;
 
     .item {
       @extend .flex;
-      @extend .pb70;
+      padding-bottom: 70px;
 
       &:last-child {
         padding-bottom: 0;
@@ -107,12 +108,11 @@
     .item {
       width: (100% / 3);
       @extend .flex;
-      @extend .pb60;
+      padding-bottom: 60px;
 
       i {
         font-size: 20px;
-        @extend .mr10;
-        @extend .lightGrey;
+        @extend .lightGray;
         @extend .darkBg;
         width: 54px;
         @extend .pt20;
@@ -135,7 +135,6 @@
           width: 50%;
           @extend .greenBg;
           @include skew(0,40);
-
         }
       }
 
@@ -151,26 +150,27 @@
       }
 
 
-       .service {
+      .service {
 
-         em {
-           @extend .extraBold;
-           @extend .uppercase;
-         }
+        em {
+          @extend .extraBold;
+          @extend .uppercase;
+        }
 
-         span {
-           @extend .blc;
-           font-size: 12px;
-           @extend .darkGrey;
-           @extend .pt10;
-           @extend .pb30;
-           @extend .capitalize;
-         }
+        span {
+          @extend .blc;
+          font-size: 12px;
+          @extend .darkGray;
+          @extend .pt10;
+          @extend .pb30;
+          @extend .capitalize;
+        }
 
-         p {
-           max-width: 300px;
-         }
-       }
+        p {
+          max-width: 300px;
+          line-height: 25px;
+        }
+      }
     }
     .puzzle {
 
@@ -179,13 +179,190 @@
       }
 
       .chevron:after, .chevron:before {
-        background-color: $black !important;
+        background-color: $black;
       }
     }
   }
 }
 
+.skills {
 
+  .items {
+    padding-bottom: 70px;
+
+    .item {
+      width: (100% / 6);
+      @extend .flex;
+      @extend .flexColumn;
+      @extend .alignItemCenter;
+
+      .circle, .circle .segment {
+        @include border-all(5px, solid, $green);
+        @include border-radius(50%);
+        height: 122px;
+        @extend .relative;
+        width: 122px;
+      }
+
+      .circle .segment {
+        left: -5px;
+        @extend .absolute;
+        top: -5px;
+        border-color: $lightGray;
+        @include transform(rotate(240deg));
+      }
+
+      .inset50 {
+        @include clip-path(inset(0 0 50% 0));
+      }
+
+      .inset68 {
+        @include clip-path(inset(0 0 68% 0));
+      }
+      .inset75 {
+        @include clip-path(inset(0 0 75% 0));
+      }
+
+      .inset83 {
+        @include clip-path(inset(0 0 83% 0));
+      }
+
+      .inset92 {
+        @include clip-path(inset(0 0 92% 0));
+      }
+
+      .inset100 {
+        @include clip-path(inset(0 0 100% 0));
+      }
+
+
+
+      .circle {
+
+        em {
+          font-size: 25px;
+          @extend .absolute;
+          @extend .extraBold;
+          @include XYAlign;
+          @extend .lightGray;
+
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .skill {
+        @extend .extraBold;
+        @extend .uppercase;
+        @extend .pt20;
+      }
+    }
+  }
+}
+
+.works {
+  padding-bottom: 110px;
+
+  .items {
+    @extend .pr10;
+    @extend .pl10;
+
+    .item {
+      width: 16.4%;
+      @extend .relative;
+      margin-right: 2px;
+      margin-bottom: 2px;
+
+      &:hover .onHover {
+        visibility: visible;
+      }
+
+      img {
+        width: 100%;
+        @include border-radius(5px);
+      }
+
+      .onHover {
+        @extend .absolute;
+        @extend .greenBg;
+        @extend .alignCenter;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        @include border-radius(5px);
+        visibility: hidden;
+
+
+        .content {
+          @include XYAlign;
+          @extend .absolute;
+          @extend .lightGray;
+
+          .icons {
+            @extend .pb40;
+
+            span {
+              @extend .squareSm;
+              @extend .inlineBlc;
+            }
+
+            a {
+
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+
+          }
+
+          em {
+            @extend .capitalize;
+            font-size: 16px;
+            @extend .blc;
+            @extend .extraBold;
+          }
+
+          span {
+            @extend .pt10;
+            @extend .pb20;
+            @extend .blc;
+            @extend .capitalize;
+            @extend .md;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  button {
+    @include border-radius(5px);
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+// Company facts section
+
+.companyFacts {
+
+  .items {
+
+    .item {
+
+      em {
+
+        &:before, &:after {
+          content: url("../images/left-shape.png");
+        }
+      }
+    }
+  }
+}
 
 // Footer
 #map {

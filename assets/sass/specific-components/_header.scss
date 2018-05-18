@@ -4,32 +4,34 @@ header {
 
   .banner {
     @include bgImage;
-    background: url("../images/banner.png");
+    background-image: url("../images/banner.png");
     height: 740px;
+    padding: 220px 0;
 
-    .content {
-      @include YAlign;
-      left: 378px;
-      color: $black;
-      font-size: 18px;
+    .container {
 
-      em {
-        font-size: 61px;
-      }
+      .content {
+        max-width: 622px;
+        color: $black;
+        text-align: center;
 
-      div {
-        font-size: 26px;
-      }
+        em {
+          font-size: 61px;
+          font-weight: $extraBold;
+          letter-spacing: 1.4px;
+        }
 
-      .desc {
-        @include border-radius(5px);
-        padding: 13px 86px 14px 12px;
+        div {
+          font-size: 26px;
+        }
 
-        span {
-
-          &:nth-child(2) {
-            text-transform: lowercase;
-          }
+        .slogan {
+          @include border-radius(5px);
+          padding: 13px 11px;
+          color: #ffffff;
+          background-color: $black;
+          font-size: 17px;
+          margin-top: 15px;
         }
       }
 
@@ -38,38 +40,30 @@ header {
       }
     }
   }
+}
 
-  .nav {
-    border-bottom: 2px solid $lightGrey;
+.nav {
+  border-bottom: 2px solid $lightGray;
 
-    .fltLeft {
+  nav {
 
-      a {
-        &:hover {
-          @include opacity(0.8);
-        }
-      }
-    }
+    ul {
 
-    nav {
+      li {
+        display: inline-block;
 
-      ul {
+        a {
+          font-size: 13px;
+          color: $gray;
+          font-weight: $extraBold;
+          padding: 15px;
+          @include transition(0.2s);
+          text-transform: uppercase;
 
-        li {
-          display: inline-block;
-
-          a {
-            font-size: 13px;
-            color: $grey;
-            font-weight: $extraBold;
-            padding: 15px 30px;
-            @include transition(0.2s);
-
-            &:hover {
-              background-color: $grey;
-              color: white;
-              @include border-radius(5px);
-            }
+          &:hover {
+            background-color: $green;
+            color: white;
+            @include border-radius(5px);
           }
         }
       }

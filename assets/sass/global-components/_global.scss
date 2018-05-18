@@ -1,8 +1,31 @@
 /* Global */
 
+// Logo
+
 .logo {
   max-height: 45px;
+
+  &:hover {
+    @include opacity(0.8);
+  }
 }
+
+// Section title
+
+.title {
+
+  &:before {
+    content: url("../images/left-shapes.png");
+    padding-right: 18px;
+  }
+
+  &:after {
+    content: url("../images/right-shapes.png");
+    padding-left: 18px;
+  }
+}
+
+// Section descriptive text
 
 .desc {
   @extend .md;
@@ -12,11 +35,38 @@
   font-size: 16px;
 }
 
+// Lines
+
+.linesLeft{
+  border-image: linear-gradient(to right, #ffffff 0%, $lightGray 61%, $lightGray 100%);
+  margin-right: 10px;
+}
+
+.linesRight {
+  margin-left: 10px;
+  border-image: linear-gradient(to left, #ffffff 0%, $lightGray 61%, $lightGray 100%);
+}
+
+.linesSm {
+  width: 132px;
+  height: 6px;
+}
+
+.linesLg {
+  width: 400px;
+  height: 8px;
+}
+
+.lines {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-image-slice: 1;
+}
+
 .square {
 
   @extend .absolute;
   @include XAlign;
-
 
   div  {
     height: 60px;
@@ -31,7 +81,27 @@
       color: #ffffff;
       font-size: 25px;
       @extend .absolute;
-      @include XYAlign;
+      @include rotate(-45deg);
+      top: 25%;
+      left: 25%;
     }
   }
 }
+
+.squareSm {
+  height: 40px;
+  width: 40px;
+  @include rotate(45deg);
+  @extend .relative;
+  @include border-radius(4px);
+
+  i {
+    font-size: 18px;
+    @extend .absolute;
+    @include rotate(-45deg);
+    top: 25%;
+    left: 25%;
+  }
+}
+
+

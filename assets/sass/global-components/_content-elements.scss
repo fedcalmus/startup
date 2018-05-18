@@ -6,16 +6,21 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: $regular;
   font-size: 14px;
-  color: $grey;
+  color: $gray;
   background-color: #ffffff;
 }
 
 .container {
-  width: 70%;
-  margin: 0 auto;
+  max-width: 1170px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .clearAfter {
+
   &:after {
     content: "";
     clear: both;
@@ -32,19 +37,19 @@ body {
   color: $black;
 }
 
-.grey {
-  color: $grey;
+.gray {
+  color: $gray;
 }
 
 .white {
   color: #ffffff;
 }
 
-.lightGrey {
-  color: $lightGrey;
+.lightGray {
+  color: $lightGray;
 }
 
-.darkGrey {
+.darkGray {
   color: #aaaaaa;
 }
 
@@ -58,10 +63,18 @@ body {
   background-color: $green;
 }
 
+.whiteBg {
+  background-color: #ffffff;
+}
+
 // Text-transform
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
 }
 
 .capitalize {
