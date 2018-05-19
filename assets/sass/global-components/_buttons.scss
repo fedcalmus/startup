@@ -5,11 +5,18 @@
   text-transform: uppercase;
   font-weight: $extraBold;
   @include border-radius(5px);
+  cursor: pointer;
 }
 
 .btnGreen {
   background-color: $green;
   color: $lightGray;
+  @include transition(0.3s);
+
+  &:hover {
+    color: $green;
+    background-color: $lightGray;
+  }
 }
 
 .btnSm {
@@ -27,6 +34,7 @@
 .btnWhite {
   background-color: #ffffff;
   color: $gray;
+  @include transition(0.3s);
 
   &:hover {
     background-color: $green;

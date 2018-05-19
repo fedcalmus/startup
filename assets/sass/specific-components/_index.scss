@@ -1,41 +1,36 @@
 /* Index */
 
-
-
 // Offer section
 
 .offer {
-  padding-top: 80px;
+  padding-top: 81px;
+  padding-bottom: 111px;
 
   .items {
-    padding-bottom: 110px;
 
     .item {
-      @extend .alignCenter;
+      text-align: center;
       width: (100% / 3);
-      @extend .pr30;
+      padding-right: 35px;
 
-      span {
-        @extend .pb35;
-        @extend .blc;
+      &:last-child {
+        padding-right: 0;
       }
 
-      em, a {
-        @extend .extraBold;
-        @extend .uppercase;
+      div {
+        padding-bottom: 35px;
       }
 
-      a {
-        @include transition(0.3s);
+      h3 {
+        font-weight: $extraBold;
+        text-transform: uppercase;
       }
 
       p {
-        @extend .pt25;
-        @extend .pb30;
-        max-width: 380px;
-        margin: 0 auto;
         line-height: 26px;
-        @extend .md;
+        font-weight: $medium;
+        padding-top: 25px;
+        padding-bottom: 30px;
       }
 
       i {
@@ -51,16 +46,19 @@
   }
 }
 
-// Features
+// Features section
 
 .features {
+  padding-top: 77px;
+  padding-bottom: 50px;
+  position: relative;
 
   .items {
-
-    padding-bottom: 55px;
+    padding-top: 25px;
+    max-width: 340px;
 
     .item {
-      @extend .flex;
+      @include flex;
       padding-bottom: 70px;
 
       &:last-child {
@@ -69,29 +67,25 @@
 
       i {
         font-size: 50px;
-        @extend .green;
-        @extend .pr35;
-        @extend .pt10;
+        color: $green;
+        padding-top: 10px;
+        padding-right: 35px;
       }
 
-      div {
+      h3 {
+        font-weight: $extraBold;
+        color: $lightGray;
+        text-transform: uppercase;
+      }
 
-        max-width: 265px;
-
-        em {
-          @extend .extraBold;
-          color: #ffffff;
-          @extend .uppercase;
-        }
-
-        p {
-          @extend .md;
-          @extend .pt20;
-          line-height: 25px;
-        }
+      p {
+        font-weight: $medium;
+        padding-top: 20px;
+        line-height: 25px;
       }
     }
   }
+
   .mockup {
     z-index: 1;
     bottom: -80px;
@@ -99,83 +93,73 @@
   }
 }
 
+// Services section
+
 .services {
+  padding-top: 80px;
+  padding-bottom: 107px;
 
   .items {
-    padding-top: 95px;
-    padding-bottom: 105px;
 
     .item {
       width: (100% / 3);
-      @extend .flex;
+      @include flex;
       padding-bottom: 60px;
 
-      i {
-        font-size: 20px;
-        @extend .lightGray;
-        @extend .darkBg;
-        width: 54px;
-        @extend .pt20;
-        @extend .pb25;
-        @extend .alignCenter;
-        @include border-top-radius(5px);
-      }
-
-      .chevron {
+      .leftContent {
+        width: 40px;
         position: relative;
-        text-align: center;
-        padding: 27px;
 
-        &:before {
-          content: '';
-          @extend .absolute;
-          top: 16px;
-          left: 0;
-          height: 40%;
-          width: 50%;
-          @extend .greenBg;
-          @include skew(0,40);
+        i {
+          font-size: 18px;
+          color: $lightGray;
+          background-color: $black;
+          width: 40px;
+          padding-top: 20px;
+          padding-bottom: 25px;
+          text-align: center;
+          @include border-top-radius(5px);
+        }
+
+        .chevron {
+
+          &:before {
+            top:16px;
+          }
+
+          &:after {
+            top: 16px;
+          }
         }
       }
 
-      .chevron:after {
-        content: '';
-        @extend .absolute;
-        top: 16px;
-        right: 0;
-        height: 40%;
-        width: 50%;
-        @extend .greenBg;
-        @include skew(0,-40);
-      }
+      .rightContent {
+        padding-left: 20px;
 
-
-      .service {
-
-        em {
-          @extend .extraBold;
-          @extend .uppercase;
+        h3 {
+          font-weight: $extraBold;
+          text-transform: uppercase;
+          padding-bottom: 10px;
         }
 
         span {
-          @extend .blc;
           font-size: 12px;
-          @extend .darkGray;
-          @extend .pt10;
-          @extend .pb30;
-          @extend .capitalize;
+          color: $darkGray;
+          text-transform: capitalize;
         }
 
         p {
           max-width: 300px;
           line-height: 25px;
+          padding-top: 20px;
         }
       }
     }
-    .puzzle {
+
+    .custom {
 
       i {
-        @extend .greenBg;
+        background-color: $green!important;
       }
 
       .chevron:after, .chevron:before {
@@ -185,31 +169,41 @@
   }
 }
 
+
+// Skills section
+
 .skills {
+  padding-top: 76px;
+  padding-bottom: 70px;
+  position: relative;
 
   .items {
-    padding-bottom: 70px;
 
     .item {
       width: (100% / 6);
-      @extend .flex;
-      @extend .flexColumn;
-      @extend .alignItemCenter;
+      @include flex;
+      flex-direction: column;
+      align-items: center;
+
 
       .circle, .circle .segment {
-        @include border-all(5px, solid, $green);
+        @include border-all(4px, solid, $green);
         @include border-radius(50%);
         height: 122px;
-        @extend .relative;
+        position: relative;
         width: 122px;
       }
 
       .circle .segment {
-        left: -5px;
-        @extend .absolute;
-        top: -5px;
+        position: absolute;
+        left: -4px;
+        top: -4px;
         border-color: $lightGray;
-        @include transform(rotate(240deg));
+        @include transform(rotate(250deg));
+      }
+
+      .custom {
+        @include transform(rotate(180deg)!important);
       }
 
       .inset50 {
@@ -236,15 +230,14 @@
       }
 
 
-
       .circle {
 
         em {
-          font-size: 25px;
-          @extend .absolute;
-          @extend .extraBold;
+          font-size: 30px;
+          position: absolute;
+          font-weight: $extraBold;
           @include XYAlign;
-          @extend .lightGray;
+          color: $lightGray;
 
           span {
             font-size: 16px;
@@ -261,16 +254,18 @@
   }
 }
 
+// Sample works section
+
 .works {
+  padding-top: 80px;
   padding-bottom: 110px;
 
   .items {
-    @extend .pr10;
-    @extend .pl10;
+    padding: 0 10px 51px 10px;
 
     .item {
-      width: 16.4%;
-      @extend .relative;
+      width: 16.5%;
+      position: relative;
       margin-right: 2px;
       margin-bottom: 2px;
 
@@ -280,13 +275,14 @@
 
       img {
         width: 100%;
+        display: block;
         @include border-radius(5px);
       }
 
       .onHover {
-        @extend .absolute;
-        @extend .greenBg;
-        @extend .alignCenter;
+        position: absolute;
+        background-color: $green;
+        text-align: center;
         width: 100%;
         height: 100%;
         top: 0;
@@ -297,15 +293,15 @@
 
         .content {
           @include XYAlign;
-          @extend .absolute;
-          @extend .lightGray;
+          position: absolute;
+          color: $lightGray;
 
           .icons {
-            @extend .pb40;
+            padding-bottom: 40px;
 
             span {
               @extend .squareSm;
-              @extend .inlineBlc;
+              display: inline-block;
             }
 
             a {
@@ -318,30 +314,22 @@
           }
 
           em {
-            @extend .capitalize;
             font-size: 16px;
             @extend .blc;
-            @extend .extraBold;
+            text-transform: capitalize;
+            font-weight: $extraBold;
           }
 
           span {
-            @extend .pt10;
-            @extend .pb20;
             @extend .blc;
-            @extend .capitalize;
-            @extend .md;
             font-size: 12px;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            text-transform: capitalize;
+            font-weight: $medium;
           }
         }
       }
-    }
-  }
-
-  button {
-    @include border-radius(5px);
-
-    &:hover {
-      opacity: 0.8;
     }
   }
 }
@@ -349,16 +337,51 @@
 // Company facts section
 
 .companyFacts {
+  padding-top: 76px;
+  padding-bottom: 94px;
 
   .items {
 
     .item {
 
-      em {
+      text-align: center;
 
-        &:before, &:after {
-          content: url("../images/left-shape.png");
+      .numbers {
+        font-size: 80px;
+        font-weight: $medium;
+        font-style: italic;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+
+        &:before {
+          content: url("../images/leftShape.png");
+          padding-right: 23px;
         }
+
+        &:after {
+          content: url("../images/left-shape.png");
+          padding-left: 23px;
+        }
+      }
+
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 18px;
+      }
+
+      i {
+        color: $green;
+        font-size: 18px;
+        padding: 0 12px;
+
+      }
+
+      em {
+        font-weight: $extraBold;
+        text-transform: uppercase;
       }
     }
   }
