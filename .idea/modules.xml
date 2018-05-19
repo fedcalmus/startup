@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/startup.iml" filepath="$PROJECT_DIR$/.idea/startup.iml" />
+      <module fileurl="file://C:\Users\stdev051\Desktop\startup.git\.idea\startup.iml" filepath="C:\Users\stdev051\Desktop\startup.git\.idea\startup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/startup.git.iml" filepath="$PROJECT_DIR$/.idea/startup.git.iml" />
     </modules>
   </component>
 </project>

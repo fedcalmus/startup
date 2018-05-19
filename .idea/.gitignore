@@ -2,3 +2,5 @@
 /startup.iml
 /vcs.xml
 /inspectionProfiles/
+*.xml
+*.git.iml
