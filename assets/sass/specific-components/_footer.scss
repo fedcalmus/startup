@@ -1,1 +1,13 @@
 /* Footer */
+
+footer {
+
+  padding-top: 57px;
+  padding-bottom: 29px;
+  position: relative;
+
+  .copyright {
+    font-weight: $extraBold;
+    text-align: center;
+  }
+}

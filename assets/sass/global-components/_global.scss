@@ -63,22 +63,25 @@
   border-image-slice: 1;
 }
 
+// Single line
+
 .line {
   width: 117px;
   border-bottom: 1px solid $gray;
 }
 
+// Square
+
 .square {
-  @extend .absolute;
+  position: absolute;
   @include XAlign;
   top: 0;
 
   div  {
     height: 60px;
     width: 60px;
-    @extend .greenBg;
     @include rotate(45deg);
-    @extend .relative;
+    position: relative;
     @include border-radius(4px);
     top: -30px;
 
@@ -92,6 +95,8 @@
     }
   }
 }
+
+// Square small
 
 .squareSm {
   height: 40px;
@@ -137,6 +142,9 @@
   background-color: $green;
   @include skew(0, -40);
 }
+
+// On hover
+
 
 
 

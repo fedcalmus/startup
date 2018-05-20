@@ -8,17 +8,6 @@
   cursor: pointer;
 }
 
-.btnGreen {
-  background-color: $green;
-  color: $lightGray;
-  @include transition(0.3s);
-
-  &:hover {
-    color: $green;
-    background-color: $lightGray;
-  }
-}
-
 .btnSm {
   padding: 12px 13px;
 }
@@ -31,8 +20,8 @@
   border-color: $lightGray;
 }
 
-.btnWhite {
-  background-color: #ffffff;
+.btnTransparent{
+  background-color: transparent;
   color: $gray;
   @include transition(0.3s);
 
@@ -43,6 +32,24 @@
   }
 }
 
+.btnGreen {
+  background-color: $green;
+  color: $lightGray;
+  @include transition(0.3s);
 
+  &:hover {
+    background-color: $black;
+  }
+}
+
+.btnGray {
+  background-color: $whisper;
+  color: $green;
+
+  &:hover {
+    background-color: $black;
+    color: $lightGray;
+  }
+}
 
 

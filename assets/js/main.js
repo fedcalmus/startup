@@ -194,15 +194,34 @@ $(function() {
                 ]
 
             });
+
             var marker = new google.maps.Marker({
                 position: newyork,
                 map: map,
                 icon: 'assets/images/marker.png'
             });
 
-        }
+        },
+
+    owlCarousel: function () {
+        $('.owl-carousel').owlCarousel({
+            nav: true,
+            navText: ["<i class='fas fa-caret-left'></i>", "<i class='fas fa-caret-right'></i>"],
+            items: 1,
+            loop: true,
+            center: true,
+            margin: 0,
+            lazyLoad: true,
+            dots: false,
+            autoplay:true,
+            autoplayTimeout:4000,
+            autoplayHoverPause:true,
+        });
+    }
+
     };
 
     /* ------ Plugins Init ------ */
     AppPlugins.map();
+    AppPlugins.owlCarousel();
 });
