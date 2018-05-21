@@ -2912,7 +2912,8 @@ input {
   outline: none; }
 
 textarea {
-  resize: vertical; }
+  resize: none;
+  outline: none; }
 
 *:before,
 *:after {
@@ -3304,6 +3305,26 @@ textarea {
   .btnBlack:hover {
     background-color: #00a99d; }
 
+/* Forms */
+input[type=text], textarea, input[type=email] {
+  width: 100%;
+  padding: 17px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dedede;
+  font-style: italic; }
+  input[type=text]::placeholder, textarea::placeholder, input[type=email]::placeholder {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic; }
+  input[type=text]:focus, textarea:focus, input[type=email]:focus {
+    border-color: #aaaaaa; }
+
 /* Content element styles */
 body {
   font-family: 'Raleway', sans-serif;
@@ -3351,6 +3372,9 @@ body {
 
 .whiteBg {
   background-color: #ffffff; }
+
+.grayBg {
+  background-color: #8a8a8a; }
 
 .uppercase, .title, .skills .items .item .skill {
   text-transform: uppercase; }
@@ -3971,10 +3995,13 @@ body {
     -moz-border-radius: 5px;
     background-color: #363636;
     position: relative; }
-    .companies .item a:hover {
-      opacity: 0.6;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-      filter: alpha(opacity=60); }
+    .companies .item a {
+      display: block;
+      height: 100%; }
+      .companies .item a:hover {
+        opacity: 0.6;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+        filter: alpha(opacity=60); }
     .companies .item img {
       top: 50%;
       left: 50%;
@@ -4035,9 +4062,11 @@ body {
       border-top: 1px solid #dedede;
       border-bottom: 1px solid #dedede; }
       .prices .item ul li {
-        padding-top: 30px;
+        padding-bottom: 30px;
         font-weight: 500;
         text-transform: capitalize; }
+        .prices .item ul li:last-child {
+          padding-bottom: 0; }
     .prices .item a {
       margin: 27px 0; }
     .prices .item button span {
@@ -4045,9 +4074,73 @@ body {
     .prices .item button:hover span {
       color: #383838; }
 
-#map {
-  height: 500px;
-  width: 100%; }
+.purchase {
+  padding-top: 72px;
+  padding-bottom: 78px;
+  margin-bottom: 67px; }
+  .purchase .container p {
+    color: #383838;
+    font-weight: 800;
+    font-size: 26px;
+    text-transform: capitalize; }
+    .purchase .container p span {
+      text-transform: uppercase; }
+    .purchase .container p i {
+      color: #00a99d;
+      font-size: 18px; }
+
+.socialIcons {
+  padding-top: 49px;
+  padding-bottom: 77px; }
+  .socialIcons .container {
+    text-align: center; }
+  .socialIcons ul {
+    padding-top: 67px; }
+    .socialIcons ul li {
+      display: inline-block;
+      font-size: 16px;
+      margin-right: 10px; }
+      .socialIcons ul li:last-child {
+        margin-right: 0; }
+      .socialIcons ul li a i {
+        color: #dedede;
+        width: 40px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #aaaaaa;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        padding: 10px 0; }
+        .socialIcons ul li a i:hover {
+          opacity: 0.7; }
+
+.contact {
+  position: relative; }
+  .contact .map {
+    height: 500px;
+    width: 100%; }
+  .contact .container {
+    z-index: 1; }
+    .contact .container .form {
+      max-width: 369px;
+      padding: 20px 33px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      background-color: #f9f9f9;
+      border: 1px solid #dedede;
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -o-transform: translateY(-50%); }
+    .contact .container button {
+      width: 100%; }
+    .contact .container textarea {
+      height: 120px; }
 
 /* Header */
 header .banner {

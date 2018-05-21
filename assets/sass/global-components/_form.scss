@@ -1,0 +1,22 @@
+/* Forms */
+
+input[type=text], textarea, input[type=email] {
+
+  width: 100%;
+  padding: 17px 20px;
+  margin-bottom: 20px;
+  @include border-radius(5px);
+  @include border-all(1px, solid, $lightGray);
+  font-style: italic;
+
+  &::placeholder {
+    font-size: 12px;
+    font-weight: $medium;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+  }
+
+  &:focus {
+    border-color: $darkGray;
+  }
+}

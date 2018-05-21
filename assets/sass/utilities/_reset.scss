@@ -64,7 +64,8 @@ input {
 }
 
 textarea {
-  resize: vertical;
+  resize: none;
+  outline: none;
 }
 
 *:before,

@@ -633,6 +633,10 @@
     position: relative;
 
     a {
+
+      display: block;
+      height: 100%;
+
       &:hover {
         @include opacity(0.6);
       }
@@ -713,9 +717,13 @@
       border-bottom: 1px solid $lightGray;
 
       li {
-        padding-top: 30px;
+        padding-bottom: 30px;
         font-weight: $medium;
         text-transform: capitalize;
+
+        &:last-child {
+          padding-bottom: 0;
+        }
       }
     }
 
@@ -739,9 +747,109 @@
   }
 }
 
+// Purchase section
 
-// Map section
-#map {
-  height: 500px;
-  width: 100%;
+.purchase {
+
+  padding-top: 72px;
+  padding-bottom: 78px;
+  margin-bottom: 67px;
+
+  .container {
+
+    p {
+
+      color: $black;
+      font-weight: $extraBold;
+      font-size: 26px;
+      text-transform: capitalize;
+
+      span {
+        text-transform: uppercase;
+      }
+
+      i {
+        color: $green;
+        font-size: 18px;
+      }
+
+    }
+  }
+}
+
+// Social icons section
+
+.socialIcons {
+
+  padding-top: 49px;
+  padding-bottom: 77px;
+
+  .container {
+    text-align: center;
+  }
+
+  ul {
+
+    padding-top: 67px;
+
+    li {
+      display: inline-block;
+      font-size: 16px;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+
+        i {
+          color: $lightGray;
+          width: 40px;
+          @include border-all(1px, solid, $darkGray);
+          @include border-radius(5px);
+          padding: 10px 0;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Contact us section
+
+.contact {
+
+  position: relative;
+
+  .map {
+    height: 500px;
+    width: 100%;
+  }
+
+  .container {
+    z-index: 1;
+
+    .form {
+      max-width: 369px;
+      padding: 20px 33px;
+      @include border-radius(5px);
+      background-color: $snow;
+      border: 1px solid $lightGray;
+      position: absolute;
+      z-index: 1;
+      @include YAlign;
+    }
+
+    button {
+      width: 100%;
+    }
+
+    textarea {
+      height: 120px;
+    }
+  }
 }
