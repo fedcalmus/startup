@@ -75,23 +75,24 @@
 .square {
   position: absolute;
   @include XAlign;
-  top: 0;
+  top: -30px;
 
   div  {
     height: 60px;
+    text-align: center;
+    transform: rotate(45deg);
     width: 60px;
-    @include rotate(45deg);
-    position: relative;
     @include border-radius(4px);
-    top: -30px;
+
 
     i {
       color: #ffffff;
       font-size: 25px;
-      position: absolute;
-      @include rotate(-45deg);
-      top: 25%;
-      left: 25%;
+      height: 60px;
+      transform: rotate(-45deg);
+      vertical-align: middle;
+      width: 60px;
+      line-height: 60px;
     }
   }
 }

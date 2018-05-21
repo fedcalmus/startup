@@ -3457,31 +3457,23 @@ body {
   -moz-transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -o-transform: translateX(-50%);
-  top: 0; }
+  top: -30px; }
   .square div {
     height: 60px;
-    width: 60px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
+    text-align: center;
     transform: rotate(45deg);
-    position: relative;
+    width: 60px;
     border-radius: 4px;
     -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    top: -30px; }
+    -moz-border-radius: 4px; }
     .square div i {
       color: #ffffff;
       font-size: 25px;
-      position: absolute;
-      -webkit-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
+      height: 60px;
       transform: rotate(-45deg);
-      top: 25%;
-      left: 25%; }
+      vertical-align: middle;
+      width: 60px;
+      line-height: 60px; }
 
 .squareSm, .works .items .item .icons span, .team .items .item .image .onHover .content li {
   height: 40px;
@@ -4196,6 +4188,8 @@ footer {
   padding-top: 57px;
   padding-bottom: 29px;
   position: relative; }
+  footer .square i {
+    font-size: 30px; }
   footer .copyright {
     font-weight: 800;
     text-align: center; }
