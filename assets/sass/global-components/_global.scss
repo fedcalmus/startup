@@ -75,7 +75,7 @@
 .square {
   position: absolute;
   @include XAlign;
-  top: -30px;
+  top: 0;
 
   div  {
     height: 60px;
@@ -83,13 +83,13 @@
     transform: rotate(45deg);
     width: 60px;
     @include border-radius(4px);
-
+    top: -30px;
 
     i {
       color: #ffffff;
       font-size: 25px;
       height: 60px;
-      transform: rotate(-45deg);
+      @include rotate(-45deg);
       vertical-align: middle;
       width: 60px;
       line-height: 60px;
@@ -103,15 +103,16 @@
   height: 40px;
   width: 40px;
   @include rotate(45deg);
-  @extend .relative;
   @include border-radius(4px);
+  text-align: center;
 
   i {
     font-size: 18px;
-    @extend .absolute;
     @include rotate(-45deg);
-    top: 25%;
-    left: 25%;
+    height: 40px;
+    vertical-align: middle;
+    width: 40px;
+    line-height: 40px;
   }
 }
 

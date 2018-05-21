@@ -3385,10 +3385,10 @@ body {
 .capitalize {
   text-transform: capitalize; }
 
-.absolute, .squareSm i, .works .items .item .icons span i, .team .items .item .image .onHover .content li i {
+.absolute {
   position: absolute; }
 
-.relative, .squareSm, .works .items .item .icons span, .team .items .item .image .onHover .content li {
+.relative {
   position: relative; }
 
 .alignCenter {
@@ -3457,7 +3457,7 @@ body {
   -moz-transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -o-transform: translateX(-50%);
-  top: -30px; }
+  top: 0; }
   .square div {
     height: 60px;
     text-align: center;
@@ -3465,11 +3465,16 @@ body {
     width: 60px;
     border-radius: 4px;
     -webkit-border-radius: 4px;
-    -moz-border-radius: 4px; }
+    -moz-border-radius: 4px;
+    top: -30px; }
     .square div i {
       color: #ffffff;
       font-size: 25px;
       height: 60px;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
       transform: rotate(-45deg);
       vertical-align: middle;
       width: 60px;
@@ -3485,7 +3490,8 @@ body {
   transform: rotate(45deg);
   border-radius: 4px;
   -webkit-border-radius: 4px;
-  -moz-border-radius: 4px; }
+  -moz-border-radius: 4px;
+  text-align: center; }
   .squareSm i, .works .items .item .icons span i, .team .items .item .image .onHover .content li i {
     font-size: 18px;
     -webkit-transform: rotate(-45deg);
@@ -3493,8 +3499,10 @@ body {
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    top: 25%;
-    left: 25%; }
+    height: 40px;
+    vertical-align: middle;
+    width: 40px;
+    line-height: 40px; }
 
 .chevron {
   position: absolute;
@@ -3791,7 +3799,6 @@ body {
         font-weight: 800; }
       .works .items .item span {
         font-size: 12px;
-        padding-top: 10px;
         padding-bottom: 20px;
         text-transform: capitalize;
         font-weight: 500; }
