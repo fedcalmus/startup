@@ -143,7 +143,17 @@
   @include skew(0, -40);
 }
 
-// On hover
+// Owl carousel icons
+
+.owl-nav i {
+  font-size: 28px;
+  width: 31px;
+  height: 31px;
+  line-height: 31px;
+  background-color: $whisper;
+  color: $green;
+  @include border-radius(5px);
+}
 
 
 

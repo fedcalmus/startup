@@ -549,14 +549,6 @@
   position: relative;
 
   .owl-nav i {
-    font-size: 28px;
-    width: 31px;
-    height: 31px;
-    line-height: 31px;
-    background-color: $whisper;
-    color: $green;
-    @include border-radius(5px);
-
     &:hover {
       background-color: $black;
       color: $whisper;
@@ -589,6 +581,77 @@
 
       .fa-quote-right {
         padding-left: 13px;
+      }
+    }
+  }
+}
+
+.companies {
+  padding: 50px 0;
+
+  .owl-carousel {
+    position: relative;
+
+    .owl-nav {
+      position: absolute;
+      width: 100%;
+      color: #bdc6cf;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-top: 0;
+
+      .owl-prev, .owl-next {
+        position: relative;
+      }
+
+      .owl-prev {
+        left: -60px;
+        float: left;
+      }
+
+      .owl-next {
+        right: 0;
+        float: right;
+        left: 60px;
+      }
+
+      i {
+        &:hover {
+          background-color: $green;
+          color: $whisper;
+        }
+      }
+    }
+  }
+
+  .item {
+    margin-right: 30px;
+    width: 270px;
+    height: 160px;
+    @include border-radius(5px);
+    background-color: #363636;
+    position: relative;
+
+    a {
+      &:hover {
+      @include opacity(0.6);
+      }
+    }
+
+    img {
+      @include XYAlign;
+      position: absolute;
+      max-width: 155px;
+      @include opacity(0.8);
+    }
+  }
+  .center {
+
+    .item {
+      background-color: #333333;
+
+      img {
+        @include opacity(1);
       }
     }
   }

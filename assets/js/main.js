@@ -204,7 +204,7 @@ $(function() {
         },
 
     owlCarousel: function () {
-        $('.owl-carousel').owlCarousel({
+        $('#owl-testimonials').owlCarousel({
             nav: true,
             navText: ["<i class='fas fa-caret-left'></i>", "<i class='fas fa-caret-right'></i>"],
             items: 1,
@@ -217,11 +217,25 @@ $(function() {
             autoplayTimeout:4000,
             autoplayHoverPause:true,
         });
+    },
+
+    owlCarouselTestimonials: function () {
+        $('#owl-companies').owlCarousel({
+            nav: true,
+            navText: ["<i class='fas fa-caret-left'></i>", "<i class='fas fa-caret-right'></i>"],
+            items: 4,
+            loop: true,
+            center: true,
+            margin: 0,
+            lazyLoad: true,
+            dots: false,
+        });
     }
 
     };
 
     /* ------ Plugins Init ------ */
     AppPlugins.map();
+    AppPlugins.owlCarouselTestimonials();
     AppPlugins.owlCarousel();
 });
