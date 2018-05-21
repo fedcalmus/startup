@@ -52,4 +52,13 @@
   }
 }
 
+.btnBlack {
+  background-color: $black;
+  color: $lightGray;
+
+  &:hover {
+    background-color: $green;
+  }
+}
+
 

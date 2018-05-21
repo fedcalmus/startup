@@ -634,7 +634,7 @@
 
     a {
       &:hover {
-      @include opacity(0.6);
+        @include opacity(0.6);
       }
     }
 
@@ -657,7 +657,90 @@
   }
 }
 
-// Footer
+// Prices section
+
+.prices {
+  padding-top: 80px;
+  padding-bottom: 82px;
+
+  .item {
+    @include border-radius(5px);
+    @include border-all(1px, solid, $lightGray);
+    width: 25%;
+    margin-right: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    button {
+      position: absolute;
+      top: -25px;
+    }
+
+    p {
+      padding: 45px 0;
+      font-size: 12px;
+      font-weight: $medium;
+
+      em {
+        font-size: 61px;
+        font-weight: $extraBold;
+        color: $black;
+
+        &:after {
+          content: url("../images/dot-black.png");
+        }
+      }
+
+      span {
+        font-size: 18px;
+      }
+
+      sup {
+        font-size: 12px;
+        vertical-align: super;
+      }
+    }
+
+    ul {
+      padding: 25px 45px;
+      border-top: 1px solid $lightGray;
+      border-bottom: 1px solid $lightGray;
+
+      li {
+        padding-top: 30px;
+        font-weight: $medium;
+        text-transform: capitalize;
+      }
+    }
+
+    a {
+      margin: 27px 0;
+    }
+
+    button {
+
+      span {
+        color: $green;
+      }
+
+      &:hover {
+
+        span {
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+
+// Map section
 #map {
   height: 500px;
   width: 100%;
