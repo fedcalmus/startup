@@ -3193,7 +3193,7 @@ textarea {
 .regular {
   font-weight: 400; }
 
-.md {
+.medium {
   font-weight: 500; }
 
 .extraBold, .skills .items .item .skill {
@@ -3515,10 +3515,10 @@ body {
     height: 40%;
     width: 51%;
     background-color: #00a99d;
-    -moz-transform: skew(0deg, 40deg);
-    -o-transform: skew(0deg, 40deg);
-    -ms-transform: skew(0deg, 40deg);
     -webkit-transform: skew(0deg, 40deg);
+    -moz-transform: skew(0deg, 40deg);
+    -ms-transform: skew(0deg, 40deg);
+    -o-transform: skew(0deg, 40deg);
     transform: skew(0deg, 40deg); }
 
 .chevron:after {
@@ -3528,10 +3528,10 @@ body {
   height: 40%;
   width: 50%;
   background-color: #00a99d;
-  -moz-transform: skew(0deg, -40deg);
-  -o-transform: skew(0deg, -40deg);
-  -ms-transform: skew(0deg, -40deg);
   -webkit-transform: skew(0deg, -40deg);
+  -moz-transform: skew(0deg, -40deg);
+  -ms-transform: skew(0deg, -40deg);
+  -o-transform: skew(0deg, -40deg);
   transform: skew(0deg, -40deg); }
 
 .owl-nav i {
@@ -4012,7 +4012,12 @@ body {
       max-width: 155px;
       opacity: 0.8;
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-      filter: alpha(opacity=80); }
+      filter: alpha(opacity=80);
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%); }
   .companies .center .item {
     background-color: #333333; }
     .companies .center .item img {

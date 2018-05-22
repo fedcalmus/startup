@@ -124,8 +124,13 @@
 }
 
 // Skew
-@mixin skew ($x, $y) {
-  @include transform(skew(#{$x}deg, #{$y}deg));
+
+@mixin skew($x, $y) {
+  -webkit-transform: skew(#{$x}deg, #{$y}deg);
+  -moz-transform: skew(#{$x}deg, #{$y}deg);
+  -ms-transform: skew(#{$x}deg, #{$y}deg);
+  -o-transform: skew(#{$x}deg, #{$y}deg);
+  transform: skew(#{$x}deg, #{$y}deg);
 }
 
 // Clip path
@@ -135,5 +140,15 @@
   -moz-clip-path: $clip;
   -ms-clip-path: $clip;
   clip-path: $clip;
+}
+
+// Filter
+
+@mixin filter($filter-type,$filter-amount) {
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+  -o-filter: $filter-type+unquote('(#{$filter-amount})');
+  filter: $filter-type+unquote('(#{$filter-amount})');
 }
 

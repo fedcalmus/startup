@@ -213,9 +213,6 @@ $(function() {
                 margin: 0,
                 lazyLoad: true,
                 dots: false,
-                autoplay:true,
-                autoplayTimeout:4000,
-                autoplayHoverPause:true,
             });
         },
 
@@ -229,6 +226,10 @@ $(function() {
                 margin: 0,
                 lazyLoad: true,
                 dots: false,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: true,
+
             });
         },
 

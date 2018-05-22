@@ -647,6 +647,7 @@
       position: absolute;
       max-width: 155px;
       @include opacity(0.8);
+      @include filter(grayscale,100%);
     }
   }
   .center {
