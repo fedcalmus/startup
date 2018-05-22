@@ -75,7 +75,7 @@
 .square {
   position: absolute;
   @include XAlign;
-  top: 0;
+  top: -30px;
 
   div  {
     height: 60px;
@@ -83,7 +83,6 @@
     transform: rotate(45deg);
     width: 60px;
     @include border-radius(4px);
-    top: -30px;
 
     i {
       color: #ffffff;

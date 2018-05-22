@@ -625,7 +625,8 @@
 
   .item {
     margin-right: 30px;
-    width: 270px;
+    min-width: 270px;
+    width: 25%;
     height: 160px;
     @include border-radius(5px);
     background-color: #363636;
