@@ -31,8 +31,15 @@ header {
         }
       }
 
-      i {
-        font-size: 50px;
+      a {
+
+        i {
+          font-size: 50px;
+        }
+
+        &:hover {
+          @include opacity(0.8);
+        }
       }
     }
   }

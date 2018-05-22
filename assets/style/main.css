@@ -4166,8 +4166,12 @@ header .banner {
       background-color: #383838;
       font-size: 17px;
       margin-top: 10px; }
-  header .banner .container i {
+  header .banner .container a i {
     font-size: 50px; }
+  header .banner .container a:hover {
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80); }
 
 .nav {
   border-bottom: 2px solid #dedede; }
