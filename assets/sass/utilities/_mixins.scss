@@ -27,6 +27,14 @@
   flex-wrap: $wrap;
 }
 
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+  -moz-justify-content: $justify;
+  -ms-justify-content: $justify;
+  justify-content: $justify;
+  -ms-flex-pack: $justify;
+}
+
 // Border radius
 
 @mixin border-radius($radius) {
@@ -84,6 +92,7 @@
   -moz-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);;
 }
 
 @mixin XAlign {
@@ -92,6 +101,7 @@
   -moz-transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
 }
 
 @mixin XYAlign {
@@ -101,6 +111,7 @@
   -moz-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 
 }
 

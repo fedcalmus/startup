@@ -3306,7 +3306,7 @@ textarea {
     background-color: #00a99d; }
 
 /* Forms */
-input[type=text], textarea, input[type=email] {
+.form input[type=text], .form textarea, .form input[type=email] {
   width: 100%;
   padding: 17px 20px;
   margin-bottom: 20px;
@@ -3317,12 +3317,12 @@ input[type=text], textarea, input[type=email] {
   border-style: solid;
   border-color: #dedede;
   font-style: italic; }
-  input[type=text]::placeholder, textarea::placeholder, input[type=email]::placeholder {
+  .form input[type=text]::placeholder, .form textarea::placeholder, .form input[type=email]::placeholder {
     font-size: 12px;
     font-weight: 500;
     font-family: 'Raleway', sans-serif;
     font-style: italic; }
-  input[type=text]:focus, textarea:focus, input[type=email]:focus {
+  .form input[type=text]:focus, .form textarea:focus, .form input[type=email]:focus {
     border-color: #aaaaaa; }
 
 /* Content element styles */
@@ -3434,7 +3434,7 @@ body {
   border-image: linear-gradient(to left, #ffffff 0%, #dedede 61%, #dedede 100%); }
 
 .linesSm {
-  width: 132px;
+  width: 130px;
   height: 6px; }
 
 .linesLg {
@@ -3457,6 +3457,7 @@ body {
   -moz-transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   top: -30px; }
   .square div {
     height: 60px;
@@ -3624,7 +3625,13 @@ body {
     padding-bottom: 60px; }
     .services .items .item .leftContent {
       width: 40px;
-      position: relative; }
+      position: relative;
+      display: flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      flex-direction: column; }
       .services .items .item .leftContent i {
         font-size: 18px;
         color: #dedede;
@@ -3740,6 +3747,7 @@ body {
       -moz-transform: translate(-50%, -50%);
       -webkit-transform: translate(-50%, -50%);
       -o-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
       color: #dedede; }
       .skills .items .item .circle em span {
         font-size: 16px; }
@@ -3781,6 +3789,7 @@ body {
           -moz-transform: translate(-50%, -50%);
           -webkit-transform: translate(-50%, -50%);
           -o-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
           position: absolute;
           color: #dedede; }
       .works .items .item .icons {
@@ -3870,19 +3879,27 @@ body {
         visibility: hidden;
         position: absolute;
         background-color: rgba(0, 169, 157, 0.9);
-        text-align: center;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
         display: flex;
-        justify-content: center; }
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center; }
         .team .items .item .image .onHover .content {
           top: 50%;
           transform: translateY(-50%);
           -moz-transform: translateY(-50%);
           -webkit-transform: translateY(-50%);
           -o-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
           position: absolute; }
       .team .items .item .image img {
         -webkit-border-top-right-radius: 5px;
@@ -4008,6 +4025,7 @@ body {
       -moz-transform: translate(-50%, -50%);
       -webkit-transform: translate(-50%, -50%);
       -o-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
       position: absolute;
       max-width: 155px;
       opacity: 0.8;
@@ -4140,7 +4158,8 @@ body {
       transform: translateY(-50%);
       -moz-transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
-      -o-transform: translateY(-50%); }
+      -o-transform: translateY(-50%);
+      -ms-transform: translateY(-50%); }
     .contact .container button {
       width: 100%; }
     .contact .container textarea {

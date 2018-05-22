@@ -1,22 +1,25 @@
 /* Forms */
 
-input[type=text], textarea, input[type=email] {
+.form {
 
-  width: 100%;
-  padding: 17px 20px;
-  margin-bottom: 20px;
-  @include border-radius(5px);
-  @include border-all(1px, solid, $lightGray);
-  font-style: italic;
+  input[type=text], textarea, input[type=email] {
 
-  &::placeholder {
-    font-size: 12px;
-    font-weight: $medium;
-    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    padding: 17px 20px;
+    margin-bottom: 20px;
+    @include border-radius(5px);
+    @include border-all(1px, solid, $lightGray);
     font-style: italic;
-  }
 
-  &:focus {
-    border-color: $darkGray;
+    &::placeholder {
+      font-size: 12px;
+      font-weight: $medium;
+      font-family: 'Raleway', sans-serif;
+      font-style: italic;
+    }
+
+    &:focus {
+      border-color: $darkGray;
+    }
   }
 }
