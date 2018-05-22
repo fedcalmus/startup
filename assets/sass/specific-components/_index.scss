@@ -171,7 +171,6 @@
   }
 }
 
-
 // Skills section
 
 .skills {
@@ -187,52 +186,60 @@
       flex-direction: column;
       align-items: center;
 
-
-      .circle, .circle .segment {
-        @include border-all(4px, solid, $green);
-        @include border-radius(50%);
-        height: 122px;
-        position: relative;
-        width: 122px;
-      }
-
-      .circle .segment {
-        position: absolute;
-        left: -4px;
-        top: -4px;
-        border-color: $lightGray;
-        @include transform(rotate(250deg));
-      }
-
-      .custom {
-        @include transform(rotate(180deg)!important);
-      }
-
-      .inset50 {
-        @include clip-path(inset(0 0 50% 0));
-      }
-
-      .inset68 {
-        @include clip-path(inset(0 0 68% 0));
-      }
-      .inset75 {
-        @include clip-path(inset(0 0 75% 0));
-      }
-
-      .inset83 {
-        @include clip-path(inset(0 0 83% 0));
-      }
-
-      .inset92 {
-        @include clip-path(inset(0 0 92% 0));
-      }
-
-      .inset100 {
-        @include clip-path(inset(0 0 100% 0));
-      }
-
-
       .circle {
+        position: relative;
+
+        svg {
+          height: 120px;
+          width: 120px;
+          position: relative;
+        }
+
+        circle {
+          stroke-width: 3px;
+          fill: transparent;
+        }
+
+        .gray {
+          stroke: $lightGray;
+        }
+
+        .green75 {
+          stroke: $green;
+          stroke-dasharray: 180, 75; /* length of arc, circumference of circle */
+          stroke-dashoffset: -150; /* offset of arc from start point (1/2 arc length + 1/4 circumference) */
+        }
+
+        .green92 {
+          stroke: $green;
+          stroke-dasharray: 180, 92; /* length of arc, circumference of circle */
+          stroke-dashoffset: -150; /* offset of arc from start point (1/2 arc length + 1/4 circumference) */
+        }
+
+        .green68 {
+          stroke: $green;
+          stroke-dasharray: 180, 68; /* length of arc, circumference of circle */
+          stroke-dashoffset: -150; /* offset of arc from start point (1/2 arc length + 1/4 circumference) */
+        }
+
+        .green100 {
+          stroke: $green;
+          stroke-dasharray: 180, 0; /* length of arc, circumference of circle */
+          stroke-dashoffset: -150; /* offset of arc from start point (1/2 arc length + 1/4 circumference) */
+        }
+
+        .green83 {
+          stroke: $green;
+          stroke-dasharray: 180, 83; /* length of arc, circumference of circle */
+          stroke-dashoffset: -150; /* offset of arc from start point (1/2 arc length + 1/4 circumference) */
+        }
+
+        .green50 {
+          stroke: $green;
+          stroke-dasharray: 180, 140; /* length of arc, circumference of circle */
+          stroke-dashoffset: -140; /* offset of arc from start point (1/2 arc length + 1/4 circumference) */
+        }
+
 
         em {
           font-size: 30px;
@@ -248,9 +255,9 @@
       }
 
       .skill {
-        @extend .extraBold;
-        @extend .uppercase;
-        @extend .pt20;
+        padding-top: 20px;
+        text-transform: uppercase;
+        font-weight: $extraBold;
       }
     }
   }

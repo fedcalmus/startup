@@ -3033,7 +3033,7 @@ textarea {
 .mr20 {
   margin-right: 20px; }
 
-.pt20, .skills .items .item .skill {
+.pt20 {
   padding-top: 20px; }
 
 .pb20 {
@@ -3196,7 +3196,7 @@ textarea {
 .medium {
   font-weight: 500; }
 
-.extraBold, .skills .items .item .skill {
+.extraBold {
   font-weight: 800; }
 
 .title {
@@ -3376,7 +3376,7 @@ body {
 .grayBg {
   background-color: #8a8a8a; }
 
-.uppercase, .title, .skills .items .item .skill {
+.uppercase, .title {
   text-transform: uppercase; }
 
 .lowercase {
@@ -3681,76 +3681,71 @@ body {
     display: -webkit-flex;
     flex-direction: column;
     align-items: center; }
-    .skills .items .item .circle, .skills .items .item .circle .segment {
-      border-width: 4px;
-      border-style: solid;
-      border-color: #00a99d;
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      height: 122px;
-      position: relative;
-      width: 122px; }
-    .skills .items .item .circle .segment {
-      position: absolute;
-      left: -4px;
-      top: -4px;
-      border-color: #dedede;
-      -moz-transform: rotate(250deg);
-      -o-transform: rotate(250deg);
-      -ms-transform: rotate(250deg);
-      -webkit-transform: rotate(250deg);
-      transform: rotate(250deg); }
-    .skills .items .item .custom {
-      -moz-transform: rotate(180deg) !important;
-      -o-transform: rotate(180deg) !important;
-      -ms-transform: rotate(180deg) !important;
-      -webkit-transform: rotate(180deg) !important;
-      transform: rotate(180deg) !important; }
-    .skills .items .item .inset50 {
-      -webkit-clip-path: inset(0 0 50% 0);
-      -moz-clip-path: inset(0 0 50% 0);
-      -ms-clip-path: inset(0 0 50% 0);
-      clip-path: inset(0 0 50% 0); }
-    .skills .items .item .inset68 {
-      -webkit-clip-path: inset(0 0 68% 0);
-      -moz-clip-path: inset(0 0 68% 0);
-      -ms-clip-path: inset(0 0 68% 0);
-      clip-path: inset(0 0 68% 0); }
-    .skills .items .item .inset75 {
-      -webkit-clip-path: inset(0 0 75% 0);
-      -moz-clip-path: inset(0 0 75% 0);
-      -ms-clip-path: inset(0 0 75% 0);
-      clip-path: inset(0 0 75% 0); }
-    .skills .items .item .inset83 {
-      -webkit-clip-path: inset(0 0 83% 0);
-      -moz-clip-path: inset(0 0 83% 0);
-      -ms-clip-path: inset(0 0 83% 0);
-      clip-path: inset(0 0 83% 0); }
-    .skills .items .item .inset92 {
-      -webkit-clip-path: inset(0 0 92% 0);
-      -moz-clip-path: inset(0 0 92% 0);
-      -ms-clip-path: inset(0 0 92% 0);
-      clip-path: inset(0 0 92% 0); }
-    .skills .items .item .inset100 {
-      -webkit-clip-path: inset(0 0 100% 0);
-      -moz-clip-path: inset(0 0 100% 0);
-      -ms-clip-path: inset(0 0 100% 0);
-      clip-path: inset(0 0 100% 0); }
-    .skills .items .item .circle em {
-      font-size: 30px;
-      position: absolute;
-      font-weight: 800;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      color: #dedede; }
-      .skills .items .item .circle em span {
-        font-size: 16px; }
+    .skills .items .item .circle {
+      position: relative; }
+      .skills .items .item .circle svg {
+        height: 120px;
+        width: 120px;
+        position: relative; }
+      .skills .items .item .circle circle {
+        stroke-width: 3px;
+        fill: transparent; }
+      .skills .items .item .circle .gray {
+        stroke: #dedede; }
+      .skills .items .item .circle .green75 {
+        stroke: #00a99d;
+        stroke-dasharray: 180, 75;
+        /* length of arc, circumference of circle */
+        stroke-dashoffset: -150;
+        /* offset of arc from start point (1/2 arc length + 1/4 circumference) */ }
+      .skills .items .item .circle .green92 {
+        stroke: #00a99d;
+        stroke-dasharray: 180, 92;
+        /* length of arc, circumference of circle */
+        stroke-dashoffset: -150;
+        /* offset of arc from start point (1/2 arc length + 1/4 circumference) */ }
+      .skills .items .item .circle .green68 {
+        stroke: #00a99d;
+        stroke-dasharray: 180, 68;
+        /* length of arc, circumference of circle */
+        stroke-dashoffset: -150;
+        /* offset of arc from start point (1/2 arc length + 1/4 circumference) */ }
+      .skills .items .item .circle .green100 {
+        stroke: #00a99d;
+        stroke-dasharray: 180, 0;
+        /* length of arc, circumference of circle */
+        stroke-dashoffset: -150;
+        /* offset of arc from start point (1/2 arc length + 1/4 circumference) */ }
+      .skills .items .item .circle .green83 {
+        stroke: #00a99d;
+        stroke-dasharray: 180, 83;
+        /* length of arc, circumference of circle */
+        stroke-dashoffset: -150;
+        /* offset of arc from start point (1/2 arc length + 1/4 circumference) */ }
+      .skills .items .item .circle .green50 {
+        stroke: #00a99d;
+        stroke-dasharray: 180, 140;
+        /* length of arc, circumference of circle */
+        stroke-dashoffset: -140;
+        /* offset of arc from start point (1/2 arc length + 1/4 circumference) */ }
+      .skills .items .item .circle em {
+        font-size: 30px;
+        position: absolute;
+        font-weight: 800;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        color: #dedede; }
+        .skills .items .item .circle em span {
+          font-size: 16px; }
+    .skills .items .item .skill {
+      padding-top: 20px;
+      text-transform: uppercase;
+      font-weight: 800; }
 
 .works {
   padding-top: 80px;
