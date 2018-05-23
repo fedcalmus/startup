@@ -185,6 +185,11 @@
       @include flex;
       flex-direction: column;
       align-items: center;
+      padding-right: 20px;
+
+      &:last-child {
+        padding-right: 0;
+      }
 
       .circle {
         position: relative;
@@ -315,13 +320,11 @@
           display: inline-block;
 
           i {
-            width: 100%;
-            height: 100%;
+            font-size: 17px;
           }
         }
 
         a {
-
           &:hover {
             opacity: 0.8;
           }
@@ -331,17 +334,17 @@
 
       em {
         font-size: 16px;
-        @extend .blc;
         text-transform: capitalize;
         font-weight: $extraBold;
+
       }
 
-      span {
-        @extend .blc;
+      p {
         font-size: 12px;
-        padding-bottom: 20px;
         text-transform: capitalize;
         font-weight: $medium;
+        padding-top: 10px;
+        padding-bottom: 20px;
       }
     }
   }

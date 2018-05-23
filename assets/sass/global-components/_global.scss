@@ -13,15 +13,20 @@
 // Section title
 
 .title {
+  @include flex;
+  align-items: center;
+  justify-content: center;
 
-  &:before {
-    content: url("../images/left-shapes.png");
-    padding-right: 18px;
-  }
+  h2 {
+    &:before {
+      content: url("../images/left-shapes.png");
+      padding-right: 18px;
+    }
 
-  &:after {
-    content: url("../images/right-shapes.png");
-    padding-left: 18px;
+    &:after {
+      content: url("../images/right-shapes.png");
+      padding-left: 18px;
+    }
   }
 }
 
