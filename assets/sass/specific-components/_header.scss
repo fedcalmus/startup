@@ -72,4 +72,17 @@ header {
       }
     }
   }
+
+  .menuIcon {
+    display: none;
+    cursor: pointer;
+
+    &:hover {
+      @include opacity(0.8);
+    }
+  }
+
+  .showNav {
+    display: inherit;
+  }
 }

@@ -105,6 +105,11 @@
       width: (100% / 3);
       @include flex;
       padding-bottom: 60px;
+      padding-right: 30px;
+
+      &:nth-child(3), &:nth-child(6) {
+        padding-right: 0;
+      }
 
       .leftContent {
         width: 40px;
@@ -125,12 +130,8 @@
 
         .chevron {
 
-          &:before {
+          &:before, &:after {
             top:16px;
-          }
-
-          &:after {
-            top: 16px;
           }
         }
       }
@@ -151,7 +152,6 @@
         }
 
         p {
-          max-width: 300px;
           line-height: 25px;
           padding-top: 20px;
         }
@@ -193,6 +193,8 @@
 
       .circle {
         position: relative;
+        width: 120px;
+        height: 120px;
 
         svg {
           height: 120px;
@@ -279,6 +281,7 @@
 
     .item {
       width: 16.5%;
+      max-width: 317px;
       position: relative;
       margin-right: 2px;
       margin-bottom: 2px;
@@ -361,7 +364,6 @@
   .items {
 
     .item {
-
       text-align: center;
       padding-right: 20px;
       width: (100% / 4);
@@ -375,7 +377,7 @@
         font-weight: $medium;
         font-style: italic;
         color: #ffffff;
-        display: flex;
+        @include flex;
         justify-content: center;
 
         &:before {
@@ -401,7 +403,7 @@
       }
 
       .icon {
-        display: flex;
+        @include flex;
         justify-content: center;
         align-items: center;
         padding-bottom: 18px;
@@ -447,6 +449,7 @@
       .image {
         line-height: 0;
         position: relative;
+        height: 270px;
 
         &:hover {
           .onHover {
@@ -456,7 +459,7 @@
 
         img {
           width: 100%;
-          height: 270px;
+          height: 100%;
         }
 
         .onHover {
@@ -635,43 +638,50 @@
   }
 
   .item {
-    margin-right: 30px;
-    min-width: 270px;
-    width: 25%;
     height: 160px;
-    @include border-radius(5px);
-    background-color: #363636;
-    position: relative;
+    padding: 0 15px;
 
-    a {
-
-      display: block;
+    div {
+      margin-right: 30px;
+      position: relative;
       height: 100%;
+      width: 100%;
+      background-color: #363636;
+      @include border-radius(5px);
 
-      &:hover {
-        @include opacity(0.6);
+      a {
+        display: block;
+        height: 100%;
+
+        &:hover {
+          @include opacity(0.6);
+        }
       }
-    }
-
-    img {
-      @include XYAlign;
-      position: absolute;
-      max-width: 155px;
-      @include opacity(0.8);
-      @include filter(grayscale,100%);
-    }
-  }
-  .center {
-
-    .item {
-      background-color: #333333;
 
       img {
-        @include opacity(1);
+        @include XYAlign;
+        position: absolute;
+        max-width: 155px;
+        @include opacity(0.8);
+        @include filter(grayscale, 100%);
       }
     }
   }
-}
+
+    .center {
+
+      .item {
+
+        div {
+          background-color: #333333;
+
+          img {
+            @include opacity(1);
+          }
+        }
+      }
+    }
+  }
 
 // Prices section
 
@@ -685,7 +695,7 @@
     width: 25%;
     margin-right: 30px;
     position: relative;
-    display: flex;
+    @include flex;
     flex-direction: column;
     align-items: center;
 
@@ -784,7 +794,6 @@
         color: $green;
         font-size: 18px;
       }
-
     }
   }
 }
@@ -808,6 +817,7 @@
       display: inline-block;
       font-size: 16px;
       margin-right: 10px;
+      margin-bottom: 10px;
 
       &:last-child {
         margin-right: 0;
@@ -848,6 +858,7 @@
     .form {
       max-width: 369px;
       padding: 20px 33px;
+      margin-right: 15px;
       @include border-radius(5px);
       background-color: $snow;
       border: 1px solid $lightGray;

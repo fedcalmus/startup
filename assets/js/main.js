@@ -213,6 +213,7 @@ $(function() {
                 margin: 0,
                 lazyLoad: true,
                 dots: false,
+
             });
         },
 
@@ -226,10 +227,31 @@ $(function() {
                 margin: 0,
                 lazyLoad: true,
                 dots: false,
-                autoplay: true,
-                autoplayTimeout: 4000,
-                autoplayHoverPause: true,
+                // autoplay: true,
+                // autoplayTimeout: 4000,
+                // autoplayHoverPause: true,
+                responsive: {
 
+                    // breakpoint from 1100 up
+                    1100 : {
+                        items: 4,
+                    },
+                    // breakpoint from 850 up
+
+                    850 : {
+                      items: 3,
+                    },
+
+                    // breakpoint from 550 up
+                    550 : {
+                        items: 2,
+                    },
+
+                    // breakpoint from 320 up
+                    300 : {
+                        items: 1,
+                    }
+                }
             });
         },
 
@@ -240,6 +262,18 @@ $(function() {
                     scrollTop: $(href).offset().top
                 }, 800);
             });
+        },
+
+        /* Navigation Toggle */
+        navBarFunction: function () {
+
+            var toggle = $(".menuToggle"),
+                menuItems = $("nav"),
+                className = "showNav";
+            toggle.on("click", function () {
+                menuItems.toggleClass(className);
+            });
+
         }
     };
 
@@ -248,4 +282,5 @@ $(function() {
     AppPlugins.owlCarouselTestimonials();
     AppPlugins.owlCarousel();
     AppPlugins.smoothscroll();
+    AppPlugins.navBarFunction();
 });
