@@ -4381,40 +4381,38 @@ footer {
     flex-direction: column;
     align-items: center; }
     .prices .items .item {
-      text-align: center; }
+      text-align: center;
+      margin-right: 0;
+      width: 70%; }
       .prices .items .item p {
-        padding-bottom: 35px; } }
-.services .items {
-  flex-direction: column;
-  align-items: center; }
-  .services .items .item {
-    width: 100%;
-    padding-right: 0; }
-    .services .items .item:last-child {
-      padding-bottom: 0; }
+        padding-bottom: 35px; }
 
-.features .mockup img {
-  width: 100%; }
+  .services .items {
+    flex-direction: column;
+    align-items: center; }
+    .services .items .item {
+      width: 100%;
+      padding-right: 0; }
+      .services .items .item:last-child {
+        padding-bottom: 0; }
 
-.purchase .container {
-  flex-direction: column;
-  text-align: center; }
-  .purchase .container p {
-    padding-bottom: 35px; }
+  .features .mockup img {
+    width: 100%; }
 
+  .purchase .container {
+    flex-direction: column;
+    text-align: center; }
+    .purchase .container p {
+      padding-bottom: 35px; } }
 @media only screen and (max-width: 680px) {
   .btnXL {
     padding-right: 80px;
     padding-left: 80px; }
 
-  .prices .items .item {
-    width: 80%;
-    margin-right: 0; } }
-.works .items {
-  justify-content: center; }
-  .works .items .item {
-    width: 49%; }
-
+  .works .items {
+    justify-content: center; }
+    .works .items .item {
+      width: 49%; } }
 @media only screen and (max-width: 550px) {
   .skills .items {
     flex-direction: column;
