@@ -4410,8 +4410,10 @@ footer {
   .prices .items .item {
     width: 80%;
     margin-right: 0; } }
-.works .items .item {
-  width: 49%; }
+.works .items {
+  justify-content: center; }
+  .works .items .item {
+    width: 49%; }
 
 @media only screen and (max-width: 550px) {
   .skills .items {
