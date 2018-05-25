@@ -4245,7 +4245,8 @@ header .banner {
         -moz-border-radius: 5px; }
   .nav .menuIcon {
     display: none;
-    cursor: pointer; }
+    cursor: pointer;
+    font-size: 18px; }
     .nav .menuIcon:hover {
       opacity: 0.8;
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
@@ -4361,16 +4362,6 @@ footer {
 
   .works .items .item {
     width: 33%; } }
-@media only screen and (max-width: 980px) {
-  .nav .container {
-    flex-direction: column; }
-    .nav .container nav {
-      padding-top: 15px; }
-
-  .title {
-    flex-direction: column; }
-    .title h2 {
-      padding: 15px 0; } }
 @media only screen and (max-width: 780px) {
   .offer .items {
     -webkit-flex-wrap: wrap;
@@ -4386,65 +4377,42 @@ footer {
       .offer .items .item:nth-child(2) {
         padding-right: 0; } }
 @media only screen and (max-width: 750px) {
-  header .nav .container {
-    display: block; }
-  header .nav .items {
-    display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    align-items: center;
-    justify-content: space-between; }
-  header .nav nav {
-    text-align: center;
-    display: none; }
-    header .nav nav ul li {
-      display: block; }
-  header .nav .menuIcon {
-    display: inherit; }
-  header .prices .items {
-    flex-direction: column; }
-    header .prices .items .item {
-      text-align: center; }
-      header .prices .items .item p {
-        padding-bottom: 35px; }
-
-  .services .items {
+  .prices .items {
     flex-direction: column;
     align-items: center; }
-    .services .items .item {
-      width: 100%;
-      padding-right: 0; }
-      .services .items .item:last-child {
-        padding-bottom: 0; }
+    .prices .items .item {
+      text-align: center; }
+      .prices .items .item p {
+        padding-bottom: 35px; } }
+.services .items {
+  flex-direction: column;
+  align-items: center; }
+  .services .items .item {
+    width: 100%;
+    padding-right: 0; }
+    .services .items .item:last-child {
+      padding-bottom: 0; }
 
-  .features .mockup img {
-    width: 100%; }
+.features .mockup img {
+  width: 100%; }
 
-  .purchase .container {
-    flex-direction: column;
-    text-align: center; }
-    .purchase .container p {
-      padding-bottom: 35px; } }
-@media only screen and (max-width: 750px) and (max-width: 680px) {
+.purchase .container {
+  flex-direction: column;
+  text-align: center; }
+  .purchase .container p {
+    padding-bottom: 35px; }
+
+@media only screen and (max-width: 680px) {
   .btnXL {
     padding-right: 80px;
     padding-left: 80px; }
 
-  header .banner .container .content em {
-    font-size: 36px; }
-  header .banner .container .content .slogan {
-    margin-bottom: 20px; }
-  header .banner .container .content .title {
-    padding: 10px 0; }
-
   .prices .items .item {
     width: 80%;
     margin-right: 0; } }
-@media only screen and (max-width: 750px) {
-  .works .items .item {
-    width: 49%; } }
+.works .items .item {
+  width: 49%; }
+
 @media only screen and (max-width: 550px) {
   .skills .items {
     flex-direction: column;
@@ -4472,6 +4440,42 @@ footer {
     .companyFacts .items .item {
       width: 100%;
       padding-right: 0; } }
+/* Header - responsive styles */
+@media only screen and (max-width: 980px) {
+  .nav .container {
+    flex-direction: column; }
+    .nav .container nav {
+      padding-top: 15px; }
+
+  .title {
+    flex-direction: column; }
+    .title h2 {
+      padding: 15px 0; } }
+@media only screen and (max-width: 750px) {
+  header .nav .container {
+    display: block; }
+  header .nav .items {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between; }
+  header .nav nav {
+    text-align: center;
+    display: none; }
+    header .nav nav ul li {
+      display: block; }
+  header .nav .menuIcon {
+    display: inherit; } }
+@media only screen and (max-width: 680px) {
+  header .banner .container .content em {
+    font-size: 36px; }
+  header .banner .container .content .slogan {
+    margin-bottom: 20px; }
+  header .banner .container .content .title {
+    padding: 10px 0; } }
 @media only screen and (max-width: 425px) {
   header .banner .container .content em {
     font-size: 28px; }

@@ -1,0 +1,123 @@
+/* Header - responsive styles */
+
+@media only screen and (max-width: 980px) {
+
+  .nav {
+
+    .container {
+      flex-direction: column;
+
+      nav {
+        padding-top: 15px;
+      }
+    }
+  }
+
+  .title {
+    flex-direction: column;
+
+    h2 {
+      padding: 15px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+
+  header {
+
+    .nav {
+
+      .container {
+        display: block;
+      }
+
+      .items {
+        @include flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      nav {
+        text-align: center;
+        display: none;
+
+        ul {
+
+          li {
+            display: block;
+          }
+        }
+      }
+
+      .menuIcon {
+        display: inherit;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 680px) {
+
+  header {
+
+    .banner {
+
+      .container {
+
+        .content {
+
+          em {
+            font-size: 36px;
+          }
+
+          .slogan {
+            margin-bottom: 20px;
+          }
+
+          .title {
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+
+  // Header
+
+  header {
+
+    .banner {
+
+      .container {
+
+        .content {
+
+          em {
+            font-size: 28px;
+          }
+
+          .slogan {
+            font-size: 12px;
+          }
+
+          i {
+            font-size: 40px;
+          }
+
+        }
+      }
+    }
+  }
+
+  .title {
+
+    h2 {
+      font-size: 16px;
+    }
+  }
+}
+

@@ -40,8 +40,6 @@
   }
 }
 
-
-
 @media only screen and (max-width: 1200px) {
 
   // Large lines
@@ -214,31 +212,6 @@
   }
 }
 
-
-@media only screen and (max-width: 980px) {
-
-  // Header
-
-  .nav {
-
-    .container {
-      flex-direction: column;
-
-      nav {
-        padding-top: 15px;
-      }
-    }
-  }
-
-  .title {
-    flex-direction: column;
-
-    h2 {
-      padding: 15px 0;
-    }
-  }
-}
-
 @media only screen and (max-width: 780px) {
 
   // Offers section
@@ -264,159 +237,99 @@
 
 @media only screen and (max-width: 750px) {
 
-  // Header
+  // Prices section
 
-  header {
-
-  .nav {
-
-    .container {
-      display: block;
-    }
-    .items {
-      @include flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    nav {
-      text-align: center;
-      display: none;
-
-      ul {
-
-        li {
-          display: block;
-        }
-      }
-    }
-
-    .menuIcon {
-      display: inherit;
-    }
-
-
-  }
-
-    // Prices section
-
-    .prices {
-
-      .items {
-        flex-direction: column;
-
-        .item {
-          text-align: center;
-
-          p {
-            padding-bottom: 35px;
-          }
-        }
-      }
-    }
-  }
-
-  // Services section
-
-  .services {
+  .prices {
 
     .items {
       flex-direction: column;
       align-items: center;
 
       .item {
-        width: 100%;
-        padding-right: 0;
+        text-align: center;
 
-        &:last-child {
-          padding-bottom: 0;
+        p {
+          padding-bottom: 35px;
         }
       }
     }
   }
+}
 
-  // Features section
+// Services section
 
-  .features {
+.services {
 
-    .mockup {
-      img {
-        width: 100%;
+  .items {
+    flex-direction: column;
+    align-items: center;
+
+    .item {
+      width: 100%;
+      padding-right: 0;
+
+      &:last-child {
+        padding-bottom: 0;
       }
     }
   }
+}
 
-  .purchase {
+// Features section
 
-    .container {
-      flex-direction: column;
-      text-align: center;
+.features {
 
-      p {
-        padding-bottom: 35px;
-      }
+  .mockup {
+    img {
+      width: 100%;
     }
   }
+}
 
-  @media only screen and (max-width: 680px) {
+.purchase {
 
-    // ButtonXL
+  .container {
+    flex-direction: column;
+    text-align: center;
 
-    .btnXL {
-      padding-right: 80px;
-      padding-left: 80px;
-    }
-
-    // Header
-
-    header {
-
-      .banner {
-
-        .container {
-
-          .content {
-
-            em {
-              font-size: 36px;
-            }
-
-            .slogan {
-              margin-bottom: 20px;
-            }
-
-            .title {
-              padding: 10px 0;
-            }
-          }
-        }
-      }
-    }
-
-    // Prices section
-
-    .prices {
-
-      .items {
-
-        .item {
-          width: 80%;
-          margin-right: 0;
-
-        }
-      }
+    p {
+      padding-bottom: 35px;
     }
   }
+}
 
-  // Our works section
+@media only screen and (max-width: 680px) {
 
-  .works {
+  // ButtonXL
+
+  .btnXL {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+
+  // Prices section
+
+  .prices {
 
     .items {
 
       .item {
-        width: 49%;
+        width: 80%;
+        margin-right: 0;
+
       }
+    }
+  }
+}
+
+// Our works section
+
+.works {
+
+  .items {
+
+    .item {
+      width: 49%;
     }
   }
 }
@@ -486,44 +399,6 @@
         width: 100%;
         padding-right: 0;
       }
-    }
-  }
-}
-
-
-@media only screen and (max-width: 425px) {
-
-  // Header
-
-  header {
-
-    .banner {
-
-      .container {
-
-        .content {
-
-          em {
-            font-size: 28px;
-          }
-
-          .slogan {
-            font-size: 12px;
-          }
-
-          i {
-            font-size: 40px;
-          }
-
-        }
-      }
-    }
-  }
-
-  .title {
-
-    h2 {
-      font-size: 16px;
     }
   }
 }

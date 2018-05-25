@@ -76,6 +76,7 @@ header {
   .menuIcon {
     display: none;
     cursor: pointer;
+    font-size: 18px;
 
     &:hover {
       @include opacity(0.8);
