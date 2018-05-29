@@ -6,6 +6,7 @@
   font-weight: $extraBold;
   @include border-radius(5px);
   cursor: pointer;
+  @include transition(0.3s);
 }
 
 .btnSm {
@@ -23,7 +24,6 @@
 .btnTransparent{
   background-color: transparent;
   color: $gray;
-  @include transition(0.3s);
 
   &:hover {
     background-color: $green;
@@ -35,7 +35,6 @@
 .btnGreen {
   background-color: $green;
   color: $lightGray;
-  @include transition(0.3s);
 
   &:hover {
     background-color: $black;
