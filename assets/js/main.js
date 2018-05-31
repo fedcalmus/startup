@@ -2,7 +2,7 @@ $(function() {
 
     var AppPlugins = {
 
-        map: function () {
+        Map: function () {
             var newyork = {lat: 40.71427, lng: -74.00597};
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 10,
@@ -203,7 +203,7 @@ $(function() {
 
         },
 
-        owlCarousel: function () {
+        OwlCarousel: function () {
             $('#owl-testimonials').owlCarousel({
                 nav: true,
                 navText: ["<i class='fas fa-caret-left'></i>", "<i class='fas fa-caret-right'></i>"],
@@ -217,7 +217,7 @@ $(function() {
             });
         },
 
-        owlCarouselTestimonials: function () {
+        OwlCarouselTestimonials: function () {
             $('#owl-companies').owlCarousel({
                 nav: true,
                 navText: ["<i class='fas fa-caret-left'></i>", "<i class='fas fa-caret-right'></i>"],
@@ -255,7 +255,7 @@ $(function() {
             });
         },
 
-        smoothscroll: function () {
+        Smoothscroll: function () {
             $(".smooth-scroll").click(function () {
                 var href = $(this).attr('href');
                 $('html, body').animate({
@@ -265,9 +265,9 @@ $(function() {
         },
 
         /* Navigation Toggle */
-        navBarFunction: function () {
+        NavBarFunction: function () {
 
-            var toggle = $(".menuToggle"),
+            var toggle = $(".menuIcon"),
                 menuItems = $("nav"),
                 className = "showNav";
             toggle.on("click", function () {
@@ -278,9 +278,9 @@ $(function() {
     };
 
     /* ------ Plugins Init ------ */
-    AppPlugins.map();
-    AppPlugins.owlCarouselTestimonials();
-    AppPlugins.owlCarousel();
-    AppPlugins.smoothscroll();
-    AppPlugins.navBarFunction();
+    AppPlugins.Map();
+    AppPlugins.OwlCarouselTestimonials();
+    AppPlugins.OwlCarousel();
+    AppPlugins.Smoothscroll();
+    AppPlugins.NavBarFunction();
 });

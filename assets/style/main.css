@@ -3396,9 +3396,6 @@ body {
 .fltRight {
   float: right; }
 
-.linesLeft {
-  border-bottom: 1px double #ffffff; }
-
 /* Global */
 .logo {
   max-height: 45px; }
@@ -4188,42 +4185,14 @@ body {
       height: 120px; }
 
 /* Header */
-header .banner {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("../images/banner.png");
-  height: 740px;
-  padding: 223px 0; }
-  header .banner .container .content {
-    max-width: 622px;
-    color: #383838;
-    text-align: center; }
-    header .banner .container .content em {
-      font-size: 61px;
-      font-weight: 800;
-      letter-spacing: 1.4px; }
-    header .banner .container .content .slogan {
-      border-radius: 5px;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      padding: 13px 11px;
-      color: #ffffff;
-      background-color: #383838;
-      font-size: 17px;
-      margin-top: 10px; }
-  header .banner .container a i {
-    font-size: 50px; }
-  header .banner .container a:hover {
-    opacity: 0.8;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-    filter: alpha(opacity=80); }
-
-.nav {
-  border-bottom: 2px solid #dedede; }
-  .nav nav ul li {
+header .nav {
+  border-bottom: 2px solid #dedede;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  position: relative; }
+  header .nav nav ul li {
     display: inline-block; }
-    .nav nav ul li a {
+    header .nav nav ul li a {
       font-size: 13px;
       color: #606060;
       font-weight: 800;
@@ -4232,22 +4201,24 @@ header .banner {
       -o-transition: 0.2s;
       -webkit-transition: 0.2s;
       transition: 0.2s;
-      text-transform: uppercase; }
-      .nav nav ul li a:hover {
+      text-transform: uppercase;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px; }
+      header .nav nav ul li a:hover {
         background-color: #00a99d;
-        color: white;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px; }
-  .nav .menuIcon {
+        color: white; }
+  header .nav .menuIcon {
     display: none;
     cursor: pointer;
-    font-size: 18px; }
-    .nav .menuIcon:hover {
+    font-size: 18px;
+    position: absolute;
+    right: 15px; }
+    header .nav .menuIcon:hover {
       opacity: 0.8;
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
       filter: alpha(opacity=80); }
-  .nav .showNav {
+  header .nav .showNav {
     display: inherit; }
 
 /* Footer */
@@ -4260,6 +4231,47 @@ footer {
   footer .copyright {
     font-weight: 800;
     text-align: center; }
+
+/* Banner */
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/banner.png");
+  height: 740px;
+  position: relative; }
+  .banner .container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    left: 375px; }
+    .banner .container .content {
+      max-width: 622px;
+      color: #383838;
+      text-align: center; }
+      .banner .container .content em {
+        font-size: 61px;
+        font-weight: 800;
+        letter-spacing: 1.4px; }
+      .banner .container .content .slogan {
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        padding: 13px 11px;
+        color: #ffffff;
+        background-color: #383838;
+        font-size: 17px;
+        margin-top: 10px; }
+    .banner .container a i {
+      font-size: 50px; }
+    .banner .container a:hover {
+      opacity: 0.8;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+      filter: alpha(opacity=80); }
 
 /* Responsive styles */
 /* Index - responsive styles */
@@ -4441,12 +4453,7 @@ footer {
   .nav .container {
     flex-direction: column; }
     .nav .container nav {
-      padding-top: 15px; }
-
-  .title {
-    flex-direction: column; }
-    .title h2 {
-      padding: 15px 0; } }
+      padding-top: 15px; } }
 @media only screen and (max-width: 750px) {
   header .nav .container {
     display: block; }
@@ -4465,22 +4472,43 @@ footer {
       display: block; }
   header .nav .menuIcon {
     display: inherit; } }
-@media only screen and (max-width: 680px) {
-  header .banner .container .content em {
-    font-size: 36px; }
-  header .banner .container .content .slogan {
-    margin-bottom: 20px; }
-  header .banner .container .content .title {
-    padding: 10px 0; } }
 @media only screen and (max-width: 425px) {
-  header .banner .container .content em {
-    font-size: 28px; }
-  header .banner .container .content .slogan {
-    font-size: 12px; }
-  header .banner .container .content i {
-    font-size: 40px; }
-
   .title h2 {
     font-size: 16px; } }
+/* Header - responsive styles */
+@media only screen and (max-width: 1500px) {
+  .banner {
+    background-position: right; }
+    .banner .container {
+      left: 200px; } }
+@media only screen and (max-width: 1200px) {
+  .banner .container {
+    left: 0; }
+    .banner .container .content {
+      background-color: rgba(124, 128, 124, 0.9);
+      padding: 20px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px; }
+    .banner .container .title {
+      flex-direction: column; }
+      .banner .container .title h2 {
+        padding: 15px 0; }
+      .banner .container .title .linesRight {
+        margin-left: 0; } }
+@media only screen and (max-width: 680px) {
+  .banner .container .content em {
+    font-size: 36px; }
+  .banner .container .content .slogan {
+    margin-bottom: 20px; }
+  .banner .container .content .title {
+    padding: 10px 0; } }
+@media only screen and (max-width: 425px) {
+  .banner .container .content em {
+    font-size: 28px; }
+  .banner .container .content .slogan {
+    font-size: 12px; }
+  .banner .container .content i {
+    font-size: 40px; } }
 
 /*# sourceMappingURL=main.css.map */

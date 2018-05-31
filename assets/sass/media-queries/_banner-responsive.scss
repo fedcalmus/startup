@@ -1,0 +1,95 @@
+/* Header - responsive styles */
+
+@media only screen and (max-width: 1500px) {
+  .banner {
+    background-position: right;
+
+    .container {
+      left: 200px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .banner {
+
+    .container {
+      left: 0;
+
+      .content {
+        background-color: rgba(124, 128, 124, 0.9);
+        padding: 20px;
+        @include border-radius(5px);
+      }
+
+      .title {
+        flex-direction: column;
+
+        h2 {
+          padding: 15px 0;
+        }
+
+        .linesRight {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 680px) {
+
+  .banner {
+
+    .container {
+
+      .content {
+
+        em {
+          font-size: 36px;
+        }
+
+        .slogan {
+          margin-bottom: 20px;
+        }
+
+        .title {
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+
+  .banner {
+
+    .container {
+
+      .content {
+
+        em {
+          font-size: 28px;
+        }
+
+        .slogan {
+          font-size: 12px;
+        }
+
+        i {
+          font-size: 40px;
+        }
+
+      }
+    }
+  }
+}
+
+
+
+
+

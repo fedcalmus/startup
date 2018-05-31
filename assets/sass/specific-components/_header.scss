@@ -2,88 +2,51 @@
 
 header {
 
-  .banner {
-    @include bgImage;
-    background-image: url("../images/banner.png");
-    height: 740px;
-    padding: 223px 0;
+  .nav {
+    border-bottom: 2px solid $lightGray;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    position: relative;
 
-    .container {
+    nav {
 
-      .content {
-        max-width: 622px;
-        color: $black;
-        text-align: center;
+      ul {
 
-        em {
-          font-size: 61px;
-          font-weight: $extraBold;
-          letter-spacing: 1.4px;
-        }
+        li {
+          display: inline-block;
 
-        .slogan {
-          @include border-radius(5px);
-          padding: 13px 11px;
-          color: #ffffff;
-          background-color: $black;
-          font-size: 17px;
-          margin-top: 10px;
-        }
-      }
-
-      a {
-
-        i {
-          font-size: 50px;
-        }
-
-        &:hover {
-          @include opacity(0.8);
-        }
-      }
-    }
-  }
-}
-
-.nav {
-  border-bottom: 2px solid $lightGray;
-
-  nav {
-
-    ul {
-
-      li {
-        display: inline-block;
-
-        a {
-          font-size: 13px;
-          color: $gray;
-          font-weight: $extraBold;
-          padding: 15px;
-          @include transition(0.2s);
-          text-transform: uppercase;
-
-          &:hover {
-            background-color: $green;
-            color: white;
+          a {
+            font-size: 13px;
+            color: $gray;
+            font-weight: $extraBold;
+            padding: 15px;
+            @include transition(0.2s);
+            text-transform: uppercase;
             @include border-radius(5px);
+
+            &:hover {
+              background-color: $green;
+              color: white;
+            }
           }
         }
       }
     }
-  }
 
-  .menuIcon {
-    display: none;
-    cursor: pointer;
-    font-size: 18px;
+    .menuIcon {
+      display: none;
+      cursor: pointer;
+      font-size: 18px;
+      position: absolute;
+      right: 15px;
 
-    &:hover {
-      @include opacity(0.8);
+      &:hover {
+        @include opacity(0.8);
+      }
     }
-  }
 
-  .showNav {
-    display: inherit;
+    .showNav {
+      display: inherit;
+    }
   }
 }

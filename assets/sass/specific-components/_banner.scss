@@ -1,0 +1,46 @@
+/* Banner */
+
+.banner {
+  @include bgImage;
+  background-image: url("../images/banner.png");
+  height: 740px;
+  position: relative;
+
+  .container {
+    position: absolute;
+    @include YAlign;
+    left: 375px;
+
+    .content {
+      max-width: 622px;
+      color: $black;
+      text-align: center;
+
+      em {
+        font-size: 61px;
+        font-weight: $extraBold;
+        letter-spacing: 1.4px;
+      }
+
+      .slogan {
+        @include border-radius(5px);
+        padding: 13px 11px;
+        color: #ffffff;
+        background-color: $black;
+        font-size: 17px;
+        margin-top: 10px;
+      }
+    }
+
+    a {
+
+      i {
+        font-size: 50px;
+      }
+
+      &:hover {
+        @include opacity(0.8);
+      }
+    }
+  }
+}
