@@ -4490,12 +4490,13 @@ footer {
       border-radius: 5px;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px; }
-    .banner .container .title {
-      flex-direction: column; }
-      .banner .container .title h2 {
-        padding: 15px 0; }
-      .banner .container .title .linesRight {
-        margin-left: 0; } }
+    .banner .container .linesRight {
+      margin-left: 0; } }
+.title {
+  flex-direction: column; }
+  .title h2 {
+    padding: 15px 0; }
+
 @media only screen and (max-width: 680px) {
   .banner .container .content em {
     font-size: 36px; }

@@ -22,19 +22,17 @@
         padding: 20px;
         @include border-radius(5px);
       }
-
-      .title {
-        flex-direction: column;
-
-        h2 {
-          padding: 15px 0;
-        }
-
         .linesRight {
           margin-left: 0;
         }
       }
     }
+  }
+.title {
+  flex-direction: column;
+
+  h2 {
+    padding: 15px 0;
   }
 }
 
